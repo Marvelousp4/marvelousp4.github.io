@@ -1,30 +1,123 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linhao Bai's Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Linhao Bai</title>
+
+  <meta name="author" content="Linhao Bai">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
 </head>
 
 <body>
-  <header>
-    <h1>Linhao Bai</h1>
-    <nav>
-      <!-- Navigation goes here -->
-    </nav>
-  </header>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    Linhao Bai
+                  </p>
+                  <p>
+                    I'm a Master's student in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>.
+                    My research focuses on robotics, dexterous hand manipulation, and AI-driven control systems.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:lbai46@gatech.edu">Email</a> &nbsp;/&nbsp;
+                    <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
+                    <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
+                    <!-- <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp; -->
+                    <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
+                    <!-- <a href="https://bsky.app/profile/jonbarron.bsky.social">Bluesky</a> &nbsp;/&nbsp; -->
+                    <a href="https://github.com/Marvelousp4/">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:37%;max-width:37%">
+                  <a href="images/linhao.jpg"><img
+                      style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
+                      src="images/linhao.jpg" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <h2>Research</h2>
+                  <p>
+                    I am currently conducting research at the <a href="https://star-lab.cc.gatech.edu/">STAR Lab</a>,
+                    advised by <a href="https://harishravichandar.com/">Harish Ravichandar</a>.
+                    I have experience in AI for robotics, velocity planning, and real-time motion execution in robotic
+                    frameworks.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+                <td style="padding:16px;width:20%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='r2r_image'><video width=100% muted autoplay loop>
+                        <source src="images/r2r.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/r2r.jpg' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function r2r_start() {
+                      document.getElementById('r2r_image').style.opacity = "1";
+                    }
 
-  <main>
-    <!-- Main content area -->
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Linhao Bai</p>
-  </footer>
-
-  <script src="script.js"></script>
+                    function r2r_stop() {
+                      document.getElementById('r2r_image').style.opacity = "0";
+                    }
+                    r2r_stop()
+                  </script>
+                </td>
+                <td style="padding:8px;width:80%;vertical-align:middle">
+                  <a href="https://relight-to-reconstruct.github.io/">
+                    <span class="papertitle">Generative Multiview Relighting for
+                      3D Reconstruction under Extreme Illumination Variation</span>
+                  </a>
+                  <br>
+                  <a href="https://hadizayer.github.io/">Hadi Alzayer</a>,
+                  <a href="https://henzler.github.io/">Philipp Henzler</a>,
+                  <strong>Jonathan T. Barron</strong>,
+                  <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+                  <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+                  <a href="https://dorverbin.github.io/">Dor Verbin</a>
+                  <br>
+                  <em>arXiv</em>, 2024
+                  <br>
+                  <a href="https://relight-to-reconstruct.github.io/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2412.15211">arXiv</a>
+                  <p></p>
+                  <p>
+                    Images taken under extreme illumination variation can be made consistent with diffusion, and this
+                    enables high-quality 3D reconstruction.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+  </table>
 </body>
 
 </html>
