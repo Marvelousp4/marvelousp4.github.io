@@ -14,131 +14,118 @@
 
 <body>
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p class="name" style="text-align: center;">
-                    Linhao Bai
-                  </p>
-                  <p>
-                    I'm a Master's student in Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a>.
-                    My research focuses on robotics, dexterous hand manipulation, and AI-driven control systems.
-                  </p>
-                  <p style="text-align:center">
-                    <a href="mailto:lbai46@gatech.edu">Email</a> &nbsp;/&nbsp;
-                    <a href="data/linhaobai_20250410.pdf">CV(Feb 2025)</a> &nbsp;/&nbsp;
-                    <a href="https://github.com/Marvelousp4/">Github</a>
-                  </p>
-                </td>
-                <td style="padding:2.5%;width:37%;max-width:37%">
-                  <a href="images/linhao.jpg"><img
-                      style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
-                      src="images/linhao.jpg" class="hoverZoomLink"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
-                  <h2>Research</h2>
-                  <p>
-                    I am currently conducting research at the <a href="https://star-lab.cc.gatech.edu/">STAR Lab</a>,
-                    advised by <a href="https://y8han.github.io/">Ph.D. Yunhai Han</a> and <a
-                      href="https://harishravichandar.com/">Harish Ravichandar</a>.
-                    My research focuses on AI for robotics, velocity planning, and real-time motion execution within
-                    robotic frameworks.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
-                <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='r2r_image'><video width=100% muted autoplay loop>
-                        <source src="images/inhandrotation.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/inhandrotation.png' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function r2r_start() {
-                      document.getElementById('r2r_image').style.opacity = "1";
-                    }
-
-                    function r2r_stop() {
-                      document.getElementById('r2r_image').style.opacity = "0";
-                    }
-                    r2r_stop()
-                  </script>
-                </td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <span class="papertitle">In-Hand Rotation for Dexterous Manipulation</span>
-                  <br>
-                  <strong>Linhao Bai</strong>
-                  <p></p>
-                  <p>
-                    A project on dexterous in-hand rotation, focusing on learning and control strategies for stable
-                    object reorientation with multi-fingered robotic hands.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="https://arxiv.org/abs/2602.07413">
-                    <span class="papertitle">Going with the Flow: Koopman Behavioral Models as Implicit Planners for Visuo-Motor Dexterity</span>
-                  </a>
-                  <br>
-                  Yunhai Han, <strong>Linhao Bai</strong>, Ziyu Xiao, Zhaodong Yang, Yogita Choudhary, Krishna Jha,
-                  Chuizheng Kong, Shreyas Kousik, Harish Ravichandar
-                  <br>
-                  <em>Under review</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2602.07413">arXiv</a>
-                  <p></p>
-                  <p>
-                    We introduce Koopman behavioral models as implicit planners for visuo-motor dexterity, enabling
-                    temporally coherent robot behavior by modeling the coupled evolution of visual and proprioceptive
-                    dynamics.
-                  </p>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:16px;width:20%;vertical-align:middle"></td>
-                <td style="padding:8px;width:80%;vertical-align:middle">
-                  <a href="https://docs.google.com/presentation/d/1DnOGvhR3VJmkDPLyQxM-S4q0-w0SaOI9VNstI6L_xKE/edit?slide=id.g3d41243bee8_0_0#slide=id.g3d41243bee8_0_0">
-                    <span class="papertitle">Video2Sim2Real</span>
-                  </a>
-                  <br>
-                  <strong>Linhao Bai</strong>
-                  <br>
-                  <a href="https://docs.google.com/presentation/d/1DnOGvhR3VJmkDPLyQxM-S4q0-w0SaOI9VNstI6L_xKE/edit?slide=id.g3d41243bee8_0_0#slide=id.g3d41243bee8_0_0">Slides</a>
-                  <p></p>
-                  <p>
-                    A video-to-simulation-to-real pipeline for rapidly prototyping visuomotor robot behaviors from
-                    video demonstrations and transferring them to real robotic systems.
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='r2r_image'><video width=100% muted autoplay loop>
+                <source src="images/inhandrotation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video></div>
+            <img src='images/inhandrotation.png' width=100%>
+          </div>
+          <script type="text/javascript">
+            function r2r_start() {
+              document.getElementById('r2r_image').style.opacity = "1";
+            }
+  
+            function r2r_stop() {
+              document.getElementById('r2r_image').style.opacity = "0";
+            }
+            r2r_stop()
+          </script>
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <span class="papertitle">In-Hand Rotation for Dexterous Manipulation</span>
+          <br>
+          <strong>Linhao Bai</strong>
+          <p></p>
+          <p>
+            In-hand object rotation is a fundamental capability for dexterous robotic manipulation, but remains
+            challenging due to complex contact dynamics, underactuation, and the need for precise coordination across
+            multiple fingers. This project studies how multi-fingered robotic hands can achieve stable and controllable
+            object reorientation under real-world sensing and execution noise.
+          </p>
+          <p>
+            Our focus is on learning and control strategies that produce smooth, reliable finger-object interaction while
+            preserving robustness to imperfect state estimation and hardware limitations. The broader goal is to enable
+            dexterous systems to manipulate objects within the hand, rather than relying only on pick-and-place style
+            grasping.
+          </p>
         </td>
       </tr>
+  
+      <tr>
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <img src='images/flow_placeholder.png' width=100% alt="Going with the Flow placeholder image">
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2602.07413">
+            <span class="papertitle">Going with the Flow: Koopman Behavioral Models as Implicit Planners for Visuo-Motor Dexterity</span>
+          </a>
+          <br>
+          Yunhai Han, <strong>Linhao Bai</strong>, Ziyu Xiao, Zhaodong Yang, Yogita Choudhary, Krishna Jha,
+          Chuizheng Kong, Shreyas Kousik, Harish Ravichandar
+          <br>
+          <em>Under review</em>
+          <br>
+          <a href="https://arxiv.org/abs/2602.07413">arXiv</a>
+          <p></p>
+          <p>
+            Recent progress in imitation learning for dexterous manipulation has been driven by expressive policy classes
+            such as diffusion and transformer models. However, these approaches often require substantial data and
+            computation, and they typically model manipulation as a reactive input-output mapping with fixed-horizon
+            action chunking. This creates a fundamental trade-off between temporal coherence and reactivity. :contentReference[oaicite:1]{index=1}
+          </p>
+          <p>
+            In this work, we introduce Unified Behavioral Models (UBMs), which represent dexterous skills as coupled
+            dynamical systems that capture the joint evolution of visual flow and proprioceptive action flow. Building on
+            this idea, Koopman-UBM learns a structured latent representation in which the combined visuo-motor dynamics
+            can be modeled by a linear system in a lifted space. :contentReference[oaicite:2]{index=2}
+          </p>
+          <p>
+            This formulation allows the model to function as an implicit planner: from an initial observation, it can
+            analytically generate temporally coherent robot behavior while simultaneously imagining how visual features
+            evolve throughout the skill horizon. The result is a planning-oriented alternative to conventional reactive
+            policy architectures for visuo-motor dexterity. :contentReference[oaicite:3]{index=3}
+          </p>
+        </td>
+      </tr>
+  
+      <tr>
+        <td style="padding:16px;width:20%;vertical-align:middle">
+          <img src='images/video2sim2real_placeholder.png' width=100% alt="Video2Sim2Real placeholder image">
+        </td>
+        <td style="padding:8px;width:80%;vertical-align:middle">
+          <a href="https://docs.google.com/presentation/d/1DnOGvhR3VJmkDPLyQxM-S4q0-w0SaOI9VNstI6L_xKE/edit?slide=id.g3d41243bee8_0_0#slide=id.g3d41243bee8_0_0">
+            <span class="papertitle">Video2Sim2Real</span>
+          </a>
+          <br>
+          <strong>Linhao Bai</strong>
+          <br>
+          <a href="https://docs.google.com/presentation/d/1DnOGvhR3VJmkDPLyQxM-S4q0-w0SaOI9VNstI6L_xKE/edit?slide=id.g3d41243bee8_0_0#slide=id.g3d41243bee8_0_0">Slides</a>
+          <p></p>
+          <p>
+            Collecting large-scale robot demonstrations in the real world is expensive, slow, and difficult to scale
+            across tasks and embodiments. Video2Sim2Real explores a practical alternative: starting from video data,
+            constructing a simulation-compatible task representation, and then transferring the learned behavior back to
+            physical robotic systems.
+          </p>
+          <p>
+            The project studies how visual demonstrations can be converted into structured supervision for robot learning,
+            enabling rapid prototyping of visuomotor policies without requiring full robot teleoperation for every new
+            task. By bridging raw video observations, simulated training, and deployment on hardware, the pipeline aims
+            to reduce the iteration cost of developing robotic manipulation skills.
+          </p>
+          <p>
+            More broadly, Video2Sim2Real is motivated by the idea that scalable robot learning will likely depend on
+            better ways to reuse internet-style or human-collected visual data, while still benefiting from the control,
+            safety, and repeatability provided by simulation during policy development.
+          </p>
+        </td>
+      </tr>
+    </tbody>
   </table>
 </body>
 
