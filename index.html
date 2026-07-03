@@ -14,30 +14,30 @@
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Linhao Bai home">Linhao Bai</a>
+  <header class="topbar">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#top">Linhao Bai</a>
       <div class="nav-links">
-        <a href="#focus">Focus</a>
-        <a href="#videos">Robots</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#stack">Stack</a>
+        <a href="#dossier">Dossier</a>
+        <a href="#motion">Motion</a>
+        <a href="#log">Log</a>
       </div>
     </nav>
   </header>
 
   <main id="content">
-    <section id="top" class="hero section-shell">
+    <section id="top" class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">U.S. Technical Lead at Wellwit Robotics</p>
-        <h1>Linhao Bai</h1>
+        <p class="kicker">U.S. Technical Lead at Wellwit Robotics</p>
+        <h1>Robotics systems in the real world.</h1>
         <p class="lead">
-          I work on mobile robotics, robot learning, and industrial automation - bringing AMR/AGV systems from engineering concepts into real warehouse deployments.
+          I work across mobile robotics, robot learning, and industrial automation, with a focus on AMR/AGV deployment, customer-site integration, debugging, and systems that hold up in real facilities.
         </p>
         <p>
-          I am a <a href="https://wellwit.com/">Wellwit Robotics</a> robotics engineer focused on North America customer-site execution, warehouse automation workflows, system integration, debugging, and technical support. I received my M.S. in Computer Science from <a href="https://www.gatech.edu/">Georgia Tech</a> in May 2026.
+          Currently at <a href="https://wellwit.com/">Wellwit Robotics</a>, I focus on North America technical execution for warehouse automation. I received my M.S. in Computer Science from <a href="https://www.gatech.edu/">Georgia Tech</a> in May 2026, with robotics research experience in robot learning and dexterous manipulation.
         </p>
-        <div class="link-row" aria-label="Profile links">
+        <div class="action-row" aria-label="Profile links">
           <a href="mailto:lbai46@gatech.edu">Email</a>
           <a href="data/linhaobai_20250410.pdf">CV</a>
           <a href="https://github.com/Marvelousp4/">GitHub</a>
@@ -45,128 +45,73 @@
         </div>
       </div>
 
-      <aside class="profile-panel" aria-label="Profile summary">
-        <img class="profile-photo" src="images/linhao.jpg" alt="Linhao Bai profile photo" width="420" height="520">
-        <div class="profile-note">
-          <strong>Mobile robotics, robot learning, and industrial automation</strong>
-          <span>Georgia Tech MSCS. Robotics engineer building deployable systems across research, integration, and field execution.</span>
-        </div>
-      </aside>
-    </section>
-
-    <section id="focus" class="section-shell section-grid">
-      <div class="section-title">
-        <div>
-          <h2>Professional Focus</h2>
-          <p class="section-summary">My work connects robotics engineering, solution design, customer environments, and hands-on deployment.</p>
-        </div>
-      </div>
-      <div class="focus-grid">
-        <article class="focus-card">
-          <span>01</span>
-          <h3>AMR / AGV Deployment</h3>
-          <p>Warehouse workflows, site constraints, robot behavior, issue reproduction, commissioning, and customer-facing technical execution.</p>
-        </article>
-        <article class="focus-card">
-          <span>02</span>
-          <h3>Robotic Systems</h3>
-          <p>Perception, planning, control, simulation, integration, and on-robot debugging across research prototypes and deployed systems.</p>
-        </article>
-        <article class="focus-card">
-          <span>03</span>
-          <h3>Robot Learning</h3>
-          <p>Dexterous manipulation, visuomotor policies, behavior models, and sim-to-real pipelines from my Georgia Tech STAR Lab work.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="videos" class="section-shell robot-videos">
-      <div class="section-heading">
-        <div>
-          <h2>Robots in Motion</h2>
-          <p class="section-summary">A quick visual slice of the robotics projects behind the page: dexterous control, video-to-sim-to-real, and Koopman-style behavior models.</p>
-        </div>
-      </div>
-
-      <div class="video-grid" aria-label="Robot project videos">
-        <article class="video-card video-card-feature">
-          <div>
-            <span>Dexterous manipulation</span>
-            <h3>In-hand object rotation</h3>
-            <p>Learning and control strategies for stable multi-fingered object reorientation under sensing and execution noise.</p>
-          </div>
-          <video controls autoplay muted loop playsinline preload="metadata" poster="images/inhandrotation.png">
+      <div class="hero-board" aria-label="Robotics portfolio media board">
+        <figure class="board-tile portrait-tile">
+          <img src="images/linhao.jpg" alt="Linhao Bai in Atlanta" width="420" height="520">
+          <figcaption>Atlanta / North America robotics work</figcaption>
+        </figure>
+        <figure class="board-tile video-tile">
+          <video autoplay muted loop playsinline preload="metadata" poster="images/inhandrotation.png">
             <source src="images/inhandrotation.mp4" type="video/mp4">
           </video>
-        </article>
+          <figcaption>Dexterous in-hand rotation</figcaption>
+        </figure>
+        <figure class="board-tile diagram-tile">
+          <img src="images/video2sim2real_pipeline.png" alt="Video2Sim2Real pipeline">
+          <figcaption>Video2Sim2Real pipeline</figcaption>
+        </figure>
+        <figure class="board-tile diagram-tile dark-tile">
+          <img src="images/kubm_pipeline.png" alt="K-UBM pipeline">
+          <figcaption>K-UBM behavior model</figcaption>
+        </figure>
+      </div>
+    </section>
 
-        <article class="video-card">
-          <div>
-            <span>Human video to robot skill</span>
-            <h3>Video2Sim2Real</h3>
-            <p>From one human manipulation video to simulation refinement and real robot execution.</p>
-          </div>
-          <video controls autoplay muted loop playsinline preload="metadata">
-            <source src="https://video2sim2real.github.io/videos/apple_human2robot.mp4" type="video/mp4">
-          </video>
+    <section id="stack" class="shell stack-section">
+      <div class="section-label">
+        <span>Working Stack</span>
+        <h2>Where I spend my time</h2>
+      </div>
+      <div class="stack-grid">
+        <article>
+          <strong>Customer-site robotics</strong>
+          <p>Translate site workflows, operational constraints, and issue reports into robot behavior changes, deployment plans, and technical actions.</p>
         </article>
-
-        <article class="video-card">
-          <div>
-            <span>Visuo-motor planning</span>
-            <h3>K-UBM policy comparison</h3>
-            <p>Structured visual-action dynamics for temporally coherent dexterous manipulation.</p>
-          </div>
-          <video controls autoplay muted loop playsinline preload="metadata">
-            <source src="https://k-ubm.github.io/static/videos/policy_compare_flower.mp4" type="video/mp4">
-          </video>
+        <article>
+          <strong>AMR / AGV systems</strong>
+          <p>Mobile robot integration, warehouse automation, commissioning, debugging, and support across real facilities.</p>
+        </article>
+        <article>
+          <strong>Robot learning bridge</strong>
+          <p>Research experience in dexterous manipulation, visuomotor behavior models, simulation, and sim-to-real transfer.</p>
+        </article>
+        <article>
+          <strong>North America execution</strong>
+          <p>Technical ownership mindset: fast diagnosis, clear evidence, reproducible logs, and communication across customers, engineering, and operations.</p>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="section-shell projects">
-      <div class="section-heading">
-        <div>
-          <h2>Selected Projects</h2>
-          <p class="section-summary">Research projects and technical artifacts that show the path from robotics ideas to deployable behavior.</p>
-        </div>
+    <section id="dossier" class="shell dossier-section">
+      <div class="section-label">
+        <span>Project Dossier</span>
+        <h2>Robotics projects with deployable instincts</h2>
       </div>
 
-      <div class="project-list" aria-label="Selected robotics projects">
-        <article class="project">
-          <a class="project-media" href="images/inhandrotation.mp4" aria-label="In-hand rotation video">
-            <video autoplay muted loop playsinline preload="metadata" poster="images/inhandrotation.png">
-              <source src="images/inhandrotation.mp4" type="video/mp4">
-            </video>
+      <div class="dossier-grid">
+        <article class="case-card wide-case">
+          <a class="case-media" href="https://video2sim2real.github.io/">
+            <img src="images/video2sim2real_pipeline.png" alt="Video2Sim2Real pipeline figure" loading="lazy">
           </a>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>Dexterous manipulation</span>
-              <span>Robot control</span>
-            </div>
-            <h3>In-Hand Rotation for Dexterous Manipulation</h3>
-            <p class="authors"><strong>Linhao Bai</strong></p>
-            <p>Studies how multi-fingered robotic hands can achieve stable, controllable object reorientation under real-world sensing noise, contact dynamics, and hardware limitations.</p>
-            <div class="paper-links">
-              <a href="images/inhandrotation.mp4">Video</a>
-              <a href="images/inhandrotation.png">Preview</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project">
-          <a class="project-media" href="https://video2sim2real.github.io/" aria-label="Video2Sim2Real project website">
-            <img src="images/video2sim2real_placeholder.png" alt="Video2Sim2Real teaser" loading="lazy">
-          </a>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>2026</span>
-              <span>Under review</span>
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>One human video</span>
+              <span>Sim-to-real</span>
             </div>
             <h3>Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video</h3>
             <p class="authors">Yunhai Han, Jianuo Qiu, <strong>Linhao Bai</strong>, Ziyu Xiao, Zihang Zeng, Yangcen Liu, Zhaodong Yang, Shalin Jain, Wenrui Ma, Jiaqi Fu, Yuqian Zheng, Manisha Natarajan, Muhammad Zubair Irshad, Kenneth Shaw, Matthew Gombolay, Zsolt Kira, Harish Ravichandar</p>
-            <p>Reconstructs a simulator-ready digital twin from a single human video, refines dexterous behavior in simulation, and transfers the skill to physical robot hardware.</p>
-            <div class="paper-links">
+            <p>Reconstructs a simulator-ready digital twin from a single human manipulation video, refines robot behavior in simulation, and transfers the skill to real hardware.</p>
+            <div class="link-row">
               <a href="https://video2sim2real.github.io/">Website</a>
               <a href="https://arxiv.org/abs/2606.08828">arXiv</a>
               <a href="https://github.com/video2sim2real/video2sim2real">Code</a>
@@ -175,51 +120,131 @@
           </div>
         </article>
 
-        <article class="project">
-          <a class="project-media" href="https://k-ubm.github.io/" aria-label="K-UBM project website">
-            <img src="images/flow_placeholder.png" alt="K-UBM visual flow teaser" loading="lazy">
+        <article class="case-card">
+          <a class="case-media" href="https://k-ubm.github.io/">
+            <img src="images/kubm_pipeline.png" alt="K-UBM pipeline figure" loading="lazy">
           </a>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>2026</span>
-              <span>Under review</span>
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>Koopman</span>
+              <span>Visuo-motor dexterity</span>
             </div>
             <h3>Going with the Flow: Koopman Behavioral Models as Implicit Planners for Visuo-Motor Dexterity</h3>
             <p class="authors">Yunhai Han, <strong>Linhao Bai</strong>, Ziyu Xiao, Zhaodong Yang, Yogita Choudhary, Krishna Jha, Chuizheng Kong, Shreyas Kousik, Harish Ravichandar</p>
-            <p>Represents dexterous skills as coupled visual and action flows, using a structured Koopman model to generate temporally coherent visuo-motor behavior.</p>
-            <div class="paper-links">
+            <p>Models dexterous skills as coupled visual and action flows, giving the robot a structured way to roll out temporally coherent behavior.</p>
+            <div class="link-row">
               <a href="https://k-ubm.github.io/">Website</a>
               <a href="https://arxiv.org/abs/2602.07413">arXiv</a>
               <a href="https://k-ubm.github.io/#video">Video</a>
             </div>
           </div>
         </article>
+
+        <article class="case-card">
+          <a class="case-media" href="images/inhandrotation.mp4">
+            <video autoplay muted loop playsinline preload="metadata" poster="images/inhandrotation.png">
+              <source src="images/inhandrotation.mp4" type="video/mp4">
+            </video>
+          </a>
+          <div class="case-copy">
+            <div class="case-meta">
+              <span>Manipulation</span>
+              <span>Control</span>
+            </div>
+            <h3>In-Hand Rotation for Dexterous Manipulation</h3>
+            <p class="authors"><strong>Linhao Bai</strong></p>
+            <p>Studies stable object reorientation with multi-fingered hands under contact dynamics, sensing uncertainty, and hardware limitations.</p>
+            <div class="link-row">
+              <a href="images/inhandrotation.mp4">Video</a>
+              <a href="images/inhandrotation.png">Preview</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="experience" class="section-shell section-grid">
-      <div class="section-title">
-        <div>
-          <h2>Experience</h2>
-          <p class="section-summary">The common thread is practical robotics: making systems work outside the lab.</p>
+    <section id="motion" class="motion-section">
+      <div class="shell">
+        <div class="section-label inverted">
+          <span>Motion Lab</span>
+          <h2>Robots should move before they persuade.</h2>
+        </div>
+        <div class="motion-grid">
+          <article class="motion-card feature-motion">
+            <video controls autoplay muted loop playsinline preload="metadata" poster="images/inhandrotation.png">
+              <source src="images/inhandrotation.mp4" type="video/mp4">
+            </video>
+            <div>
+              <span>Local clip</span>
+              <h3>In-hand rotation</h3>
+            </div>
+          </article>
+          <article class="motion-card">
+            <video controls autoplay muted loop playsinline preload="metadata">
+              <source src="https://video2sim2real.github.io/videos/apple_human2robot.mp4" type="video/mp4">
+            </video>
+            <div>
+              <span>Video2Sim2Real</span>
+              <h3>Human video to robot</h3>
+            </div>
+          </article>
+          <article class="motion-card">
+            <video controls autoplay muted loop playsinline preload="metadata">
+              <source src="https://video2sim2real.github.io/videos/spice_life.mp4" type="video/mp4">
+            </video>
+            <div>
+              <span>Video2Sim2Real</span>
+              <h3>Real-world task clip</h3>
+            </div>
+          </article>
+          <article class="motion-card">
+            <video controls autoplay muted loop playsinline preload="metadata">
+              <source src="https://k-ubm.github.io/static/videos/policy_compare_flower.mp4" type="video/mp4">
+            </video>
+            <div>
+              <span>K-UBM</span>
+              <h3>Policy comparison</h3>
+            </div>
+          </article>
+          <article class="motion-card image-motion">
+            <img src="images/kubm_door_replanning.gif" alt="K-UBM door replanning demonstration" loading="lazy">
+            <div>
+              <span>K-UBM</span>
+              <h3>Replanning under disturbance</h3>
+            </div>
+          </article>
         </div>
       </div>
-      <ol class="timeline">
-        <li>
+    </section>
+
+    <section id="log" class="shell log-section">
+      <div class="section-label">
+        <span>Operations Log</span>
+        <h2>The thread through the work</h2>
+      </div>
+      <div class="log-grid">
+        <article>
           <time>2026 - Present</time>
-          <span><strong>U.S. Technical Lead, Wellwit Robotics.</strong> Mobile robotics, robot learning, industrial automation, warehouse AMR/AGV deployment, customer-site integration, and North America technical execution.</span>
-        </li>
-        <li>
+          <h3>U.S. Technical Lead, Wellwit Robotics</h3>
+          <p>Mobile robotics, robot learning, industrial automation, warehouse AMR/AGV deployment, customer-site integration, and North America technical execution.</p>
+        </article>
+        <article>
           <time>2024 - 2026</time>
-          <span><strong>Georgia Tech MSCS and STAR Lab.</strong> Robot learning, dexterous manipulation, visuomotor behavior models, and real-time robotic execution.</span>
-        </li>
-      </ol>
+          <h3>Georgia Tech MSCS and STAR Lab</h3>
+          <p>Robot learning, dexterous manipulation, visuomotor behavior models, simulation, and real-time robotic execution.</p>
+        </article>
+        <article>
+          <time>Direction</time>
+          <h3>Robotics solutions and regional ownership</h3>
+          <p>Build toward technical ownership for North America projects: evidence-driven support, deployment discipline, and systems that customers can trust.</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="section-shell">
-      <p>Built with GitHub Pages. Inspired by clean robotics research homepages and updated for field robotics, deployment, and industrial automation.</p>
+    <div class="shell">
+      <p>GitHub Pages portfolio for robotics engineering, deployment, and robot learning work.</p>
     </div>
   </footer>
 </body>
