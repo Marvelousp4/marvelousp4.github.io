@@ -251,10 +251,27 @@ h3 {
   font-variant-numeric: tabular-nums;
 }
 
-.organization {
+.experience-list .organization {
   margin: 0.18rem 0 0.55rem;
-  color: #45494d !important;
+  color: #45494d;
   font-weight: 600;
+}
+
+.role-history {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.role-history > div + div {
+  border-top: 1px dashed var(--line);
+  padding-top: 0.8rem;
+}
+
+.role-history .role-date {
+  margin-bottom: 0.2rem;
+  color: #45494d;
+  font-size: 0.84rem;
+  font-weight: 650;
 }
 
 .project {
