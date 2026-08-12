@@ -251,9 +251,9 @@ h3 {
   font-variant-numeric: tabular-nums;
 }
 
-.organization {
+.experience-list .organization {
   margin: 0.18rem 0 0.55rem;
-  color: #45494d !important;
+  color: #45494d;
   font-weight: 600;
 }
 
