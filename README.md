@@ -1,5 +1,7 @@
 # linhaobai.com
 
-Personal website for Linhao Bai, Robotics Integration Engineer.
+Personal website for Linhao Bai.
 
-The site is a lightweight static portfolio built with semantic HTML and CSS and hosted on GitHub Pages. It focuses on production robotics systems, integration, deployment, and selected robot-learning research.
+Current positioning: full-stack production robotics systems, robotics software and autonomy, reliability / observability / evaluation, and robot learning.
+
+The site is intentionally lightweight: semantic HTML + CSS, hosted on GitHub Pages. Public content should reflect verifiable experience and research without exposing employer-confidential technical details.
