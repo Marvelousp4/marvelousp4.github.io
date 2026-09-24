@@ -42,21 +42,25 @@
           <div class="resume-entry-head"><h3>Tesla — Robotics Integrations Engineer</h3><span class="resume-date">Sep 2026 — Present</span></div>
           <p class="resume-sub">Austin, Texas</p>
           <ul>
-            <li>Work across production robotics systems spanning <strong>multi-robot orchestration, distributed services, robot runtime, simulation / virtual commissioning, localization, robot interfaces, and agentic AI tooling</strong> for factory automation.</li>
-            <li>Build software-defined orchestration and integration systems for <strong>AMR, ASRS, and conveyance</strong>, translating manufacturing processes into reusable task models, robot behaviors, configuration, and scalable engineering infrastructure.</li>
+            <li>Work across production robotics systems spanning <strong>multi-robot orchestration, distributed / edge services, robot runtime, simulation / virtual commissioning, localization, robot interfaces, and agentic AI tooling</strong> for factory automation.</li>
+            <li>Build software-defined orchestration and integration systems for <strong>AMR, ASRS, and conveyance</strong>, translating manufacturing processes into reusable job / task abstractions, robot behaviors, configuration, and scalable engineering infrastructure.</li>
+            <li>Work across fleet software, robot / autonomy layers, industrial control interfaces, infrastructure, and physical processes to connect system architecture with production-scale robotic behavior.</li>
           </ul>
         </div>
         <div class="resume-entry">
           <div class="resume-entry-head"><h3>Georgia Institute of Technology, STAR Lab — Graduate Research Assistant</h3><span class="resume-date">Oct 2024 — May 2026</span></div>
           <p class="resume-sub">Atlanta, Georgia</p>
-          <ul><li>Developed dexterous robot-learning systems spanning <strong>visuomotor dynamics, behavior prediction / replanning, residual RL, simulation, and sim-to-real</strong>; built a ROS real-time control stack for learned-policy execution on a Kinova arm with PSYONIC / Allegro hands.</li></ul>
+          <ul>
+            <li>Developed dexterous robot-learning systems spanning <strong>visuomotor dynamics, behavior prediction / replanning, residual RL, simulation, and sim-to-real</strong>; contributed to K-UBM and Video2Sim2Real.</li>
+            <li>Built a ROS-based real-time policy-execution stack for a Kinova arm with PSYONIC / Allegro hands, including <strong>low-latency joint streaming, joint-space velocity planning, synchronized arm-hand control, feedback, and evaluation logging</strong>.</li>
+          </ul>
         </div>
         <div class="resume-entry">
           <div class="resume-entry-head"><h3>SEER Robotics — Project Manager / Software Engineer</h3><span class="resume-date">Jun 2022 — Jul 2024</span></div>
           <p class="resume-sub">Shanghai, China · Global deployments</p>
           <ul>
             <li>Delivered AMR software and integration solutions to <strong>35+ international clients</strong> across North America, Europe, and Asia, working across fleet systems, localization, networking, embedded interfaces, and robot hardware.</li>
-            <li>Developed <strong>C++</strong> services for OTA / backup, time synchronization, health monitoring, integration plugins, and telemetry; led a five-AMR / 100+ rack system using <strong>hybrid SLAM + QR correction, reservation / queueing, and multi-robot stress testing</strong>.</li>
+            <li>Developed <strong>C++</strong> services for OTA / backup, time synchronization, health monitoring, integration plugins, and telemetry; worked across robot controllers, LiDAR / localization, embedded communications, and fleet software.</li>
           </ul>
         </div>
       </section>
@@ -73,6 +77,21 @@
           <p class="resume-authors"><strong>Preprint 2026</strong> — Y. Han*, J. Qiu*, <strong>L. Bai</strong>, Z. Xiao, et al. — <a href="https://video2sim2real.github.io/">Project</a> · <a href="https://arxiv.org/abs/2606.08828">arXiv</a> · <a href="https://github.com/video2sim2real/video2sim2real">Code</a></p>
           <p>Contributed to <strong>foundation-model perception, scene / motion reconstruction, residual RL, object-flow objectives, and real-robot policy execution</strong> in a full-stack video-to-simulation-to-real pipeline.</p>
         </div>
+        <div class="resume-entry">
+          <p><strong>Additional publication:</strong> “A 1/R Law for Kurtosis Contrast in Balanced Mixtures,” <em>IEEE Signal Processing Letters</em>, 2026.</p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Selected Engineering Work</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Real-Time Learned-Policy Execution for Dexterous Manipulation</h3><span class="resume-date">2025–2026</span></div>
+          <p>Built the software bridge from learned policies to physical manipulation hardware, integrating ROS control, Kinova command interfaces, dexterous hands, state feedback, timing, safety limits, and structured experiment logging.</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Multi-Robot Goods-to-Person Warehouse System</h3><span class="resume-date">2024</span></div>
+          <p>Led a five-AMR / 100+ rack system; redesigned routing and fleet workflows, introduced <strong>hybrid SLAM + QR localization correction and rack reservation / queueing</strong>, and ran randomized multi-robot stress tests across several hundred rack movements.</p>
+        </div>
       </section>
 
       <section class="resume-section resume-two-col">
@@ -83,7 +102,7 @@
         </div>
         <div>
           <h2>Technical Areas</h2>
-          <p class="resume-skills"><strong>Robotics:</strong> multi-robot orchestration, fleet systems, localization / SLAM, mapping, robot runtime<br><strong>Distributed:</strong> Linux, Docker, Kubernetes, networking, telemetry, observability<br><strong>Learning / AI:</strong> PyTorch, RL, imitation learning, residual RL, Koopman dynamics, LLM agents, tool use<br><strong>Simulation / Vision:</strong> MuJoCo, Isaac Gym, sim-to-real, virtual commissioning, SAM / SAM3D, CoTracker<br><strong>Programming:</strong> Python, C++, Bash, ROS / ROS2, CAN, RS-485, REST, Modbus TCP</p>
+          <p class="resume-skills"><strong>Robotics:</strong> multi-robot orchestration, fleet systems, task planning, localization / SLAM, mapping, robot runtime, industrial controls<br><strong>Distributed:</strong> Linux, Docker, Kubernetes, Git, SQL, Redis, networking, telemetry, observability, test automation<br><strong>Learning / AI:</strong> PyTorch, reinforcement learning, imitation learning, residual RL, Koopman dynamics, visuomotor policies, LLM agents, tool use, RAG<br><strong>Simulation / Vision:</strong> MuJoCo, Isaac Gym, sim-to-real, virtual commissioning, SAM / SAM3D, CoTracker, 3D perception<br><strong>Programming:</strong> Python, C++, Bash, ROS / ROS2, CAN, RS-485, REST APIs, Modbus TCP</p>
         </div>
       </section>
     </article>
