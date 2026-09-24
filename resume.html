@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Linhao Bai">
+  <meta name="description" content="Resume of Linhao Bai — robotics systems, robot learning, dexterous manipulation, and production robotics.">
+  <title>Linhao Bai — Resume</title>
+  <link rel="icon" href="images/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    :root { --resume-blue:#1f4e79; --resume-rule:#d4d4d4; --resume-muted:#666; }
+    .resume-shell { max-width: 980px; margin: 48px auto 80px; padding: 0 32px; }
+    .resume-topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:24px; }
+    .resume-topbar a { text-decoration:none; }
+    .resume-actions { display:flex; gap:16px; align-items:center; }
+    .print-link { border:1px solid #d8d8d8; border-radius:999px; padding:8px 14px; background:#fff; cursor:pointer; font:inherit; color:#222; }
+    .resume-paper { background:#fff; }
+    .resume-header { text-align:center; margin-bottom:18px; }
+    .resume-header h1 { font-size:2.25rem; margin:0 0 4px; letter-spacing:-0.035em; }
+    .resume-kicker { margin:0; color:#333; font-size:1.02rem; }
+    .resume-links { margin-top:8px; display:flex; flex-wrap:wrap; justify-content:center; gap:8px 14px; font-size:.91rem; }
+    .resume-links a { color:var(--resume-blue); text-decoration:none; }
+    .resume-focus { text-align:center; margin:11px 0 0; font-size:.91rem; }
+    .resume-section { margin-top:18px; }
+    .resume-section h2 { font-size:1.02rem; text-transform:uppercase; letter-spacing:.035em; margin:0 0 9px; border-bottom:1px solid var(--resume-rule); padding-bottom:5px; }
+    .resume-entry { margin:0 0 11px; }
+    .resume-entry-head { display:flex; justify-content:space-between; gap:20px; align-items:baseline; }
+    .resume-entry h3 { font-size:.98rem; margin:0; line-height:1.28; }
+    .resume-date, .resume-venue { white-space:nowrap; color:var(--resume-muted); font-size:.9rem; }
+    .resume-venue { color:var(--resume-blue); font-weight:700; }
+    .resume-sub { margin:2px 0 4px; color:var(--resume-muted); font-style:italic; font-size:.9rem; }
+    .resume-authors { margin:2px 0 3px; color:var(--resume-muted); font-size:.88rem; line-height:1.4; }
+    .resume-entry p { margin:3px 0; line-height:1.48; }
+    .resume-entry ul { margin:5px 0 0 1.15rem; padding:0; }
+    .resume-entry li { margin:3px 0; line-height:1.45; }
+    .resume-inline-links a { color:var(--resume-blue); text-decoration:none; }
+    .resume-system { margin:0 0 8px; line-height:1.5; }
+    .resume-skills { line-height:1.55; }
+    .resume-skills strong { color:#202020; }
+    @media (max-width:700px) {
+      .resume-shell { padding:0 20px; margin-top:28px; }
+      .resume-entry-head { display:block; }
+      .resume-date,.resume-venue { display:block; margin-top:2px; }
+      .resume-topbar { align-items:flex-start; }
+    }
+    @media print {
+      .site-header,.site-footer,.resume-topbar { display:none !important; }
+      .resume-shell { max-width:none; margin:0; padding:0; }
+      .resume-paper { font-size:10.5pt; }
+      .resume-header h1 { font-size:22pt; }
+      .resume-section { margin-top:11pt; break-inside:avoid; }
+      a { color:#000 !important; text-decoration:none !important; }
+      @page { size: Letter; margin: 0.45in; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="wordmark" href="index.html">Linhao Bai</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#work">Selected Work</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+      </div>
+    </nav>
+  </header>
+  <main class="resume-shell">
+    <div class="resume-topbar">
+      <a href="index.html">← Back to homepage</a>
+      <div class="resume-actions">
+        <span>CoRL 2026 edition</span>
+        <button class="print-link" onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+    <article class="resume-paper">
+      <header class="resume-header">
+        <h1>Linhao Bai</h1>
+        <p class="resume-kicker">Robotics Integrations Engineer, Tesla &nbsp;|&nbsp; Production Robotics Systems &amp; Robot Learning</p>
+        <div class="resume-links">
+          <a href="mailto:lbai46@gatech.edu">lbai46@gatech.edu</a>
+          <a href="https://marvelousp4.github.io/">marvelousp4.github.io</a>
+          <a href="https://scholar.google.com/citations?user=MAtZMRIAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/linhaobai/">LinkedIn</a>
+          <a href="https://github.com/Marvelousp4/">GitHub</a>
+        </div>
+        <p class="resume-focus"><strong>Research &amp; Engineering Focus:</strong> robot learning, dexterous manipulation, simulation/evaluation, production robotics, reliability &amp; autonomy infrastructure</p>
+      </header>
+
+      <section class="resume-section">
+        <h2>Selected Publications &amp; Research</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-head">
+            <h3>Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity</h3>
+            <span class="resume-venue">CoRL 2026</span>
+          </div>
+          <p class="resume-authors">Yunhai Han, Jiaqi Fu*, <strong>Linhao Bai*</strong>, Ziyu Xiao*, et al. &nbsp; (* equal contribution) &nbsp; <span class="resume-inline-links"><a href="https://k-ubm.github.io/">Project</a> · <a href="https://arxiv.org/abs/2602.07413">arXiv</a></span></p>
+          <p>Contributed to visual-flow representations, Koopman behavioral dynamics, and evaluation for temporally coherent dexterous manipulation and event-triggered online replanning across simulation and real-robot tasks.</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-head">
+            <h3>Video2Sim2Real: Full-Stack Self-Sufficient Dexterous Skill Acquisition from a Single Human Video</h3>
+            <span class="resume-venue">Preprint 2026</span>
+          </div>
+          <p class="resume-authors">Yunhai Han, Jianuo Qiu, <strong>Linhao Bai</strong>, Ziyu Xiao, et al. &nbsp; <span class="resume-inline-links"><a href="https://video2sim2real.github.io/">Project</a> · <a href="https://arxiv.org/abs/2606.08828">arXiv</a> · <a href="https://github.com/video2sim2real/video2sim2real">Code</a></span></p>
+          <p>Developed perception-to-simulation components using foundation-model-based vision and motion tracking; trained/tuned residual RL and object-flow objectives and contributed to real-hardware learned-policy execution.</p>
+        </div>
+        <p class="resume-system"><strong>Additional publication:</strong> <a href="https://arxiv.org/abs/2602.22334">A 1/R Law for Kurtosis Contrast in Balanced Mixtures</a> — IEEE Signal Processing Letters, 2026.</p>
+      </section>
+
+      <section class="resume-section">
+        <h2>Experience</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Tesla — Robotics Integrations Engineer</h3><span class="resume-date">Sep 2026 — Present</span></div>
+          <p class="resume-sub">Austin, Texas</p>
+          <ul>
+            <li>Work across production robotics systems spanning fleet orchestration, distributed services, robot runtime, factory interfaces, and physical deployment, with emphasis on end-to-end behavior, cross-layer diagnosis, reliability, and validation.</li>
+            <li>Help establish repeatable integration workflows that turn field failures into structured engineering evidence, reusable diagnostics/validation, and durable system improvements rather than one-off recovery.</li>
+          </ul>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Georgia Institute of Technology, STAR Lab — Graduate Research Assistant</h3><span class="resume-date">Oct 2024 — May 2026</span></div>
+          <p class="resume-sub">Atlanta, Georgia</p>
+          <ul><li>Research across robot learning, visuomotor dynamics, dexterous manipulation, simulation, residual reinforcement learning, sim-to-real transfer, and real-robot evaluation; contributed to K-UBM and Video2Sim2Real.</li></ul>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>SEER Robotics — Project Manager / Software Engineer</h3><span class="resume-date">Jun 2022 — Jul 2024</span></div>
+          <p class="resume-sub">Shanghai, China · Global deployments</p>
+          <ul><li>Delivered AMR integration solutions for 35+ clients across North America, Europe, and Asia; developed C++ services for OTA/backup, time synchronization, health monitoring, telemetry, and system integration.</li></ul>
+        </div>
+        <p class="resume-system"><strong>Wellwit Robotics — Robotics Engineer / U.S. Technical Lead, North America (Jul–Aug 2026):</strong> supported production AMR deployments and cross-layer incident diagnosis across localization, motion, pallet handling, and fleet workflows.</p>
+      </section>
+
+      <section class="resume-section">
+        <h2>Selected Systems Work</h2>
+        <p class="resume-system"><strong>Learned-Policy-to-Hardware Control —</strong> Built the ROS real-time execution bridge for a Kinova arm with PSYONIC/Allegro dexterous hands, including low-latency joint streaming, velocity planning, synchronized arm-hand control, feedback, and failure logging.</p>
+        <p class="resume-system"><strong>Multi-Robot Warehouse Deployment —</strong> Led a five-AMR / 100+ rack deployment; diagnosed localization limitations, introduced hybrid SLAM + QR correction and resource reservation/queueing, and validated behavior through randomized multi-robot stress tests.</p>
+      </section>
+
+      <section class="resume-section">
+        <h2>Education</h2>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Georgia Institute of Technology — M.S. Computer Science (Machine Learning)</h3><span class="resume-date">Aug 2024 — May 2026</span></div>
+          <p class="resume-sub">GPA 4.0 / 4.0 · Robotics research in STAR Lab</p>
+        </div>
+        <div class="resume-entry">
+          <div class="resume-entry-head"><h3>Chongqing Jiaotong University — B.Eng. Civil Engineering</h3><span class="resume-date">Sep 2018 — Jun 2022</span></div>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Technical Depth</h2>
+        <p class="resume-skills"><strong>Robotics &amp; Learning:</strong> Python, C++, ROS/ROS2, PyTorch, reinforcement learning, sim-to-real, dexterous manipulation, computer vision &nbsp; | &nbsp; <strong>Simulation &amp; Control:</strong> MuJoCo, Isaac Gym, real-time robot control, motion/velocity planning, policy-to-hardware integration &nbsp; | &nbsp; <strong>Production Systems:</strong> Linux, Git, Docker, networking, distributed/fleet systems, telemetry/log analysis, test automation, LiDAR, CAN/RS-485</p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer"><div class="nav-shell"><p>© 2026 Linhao Bai</p><a href="index.html">Homepage</a></div></footer>
+</body>
+</html>
