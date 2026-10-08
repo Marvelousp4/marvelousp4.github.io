@@ -232,3 +232,34 @@ a.project-image:hover { border-color:#aac2e5; transform:translateY(-2px); }
   body,.resume-paper { background:white; }
   .resume-entry,.resume-section { break-inside:avoid; }
 }
+
+/* Portrait correction: preserve the source image's native 1707 × 1280 (4:3)
+   aspect ratio. Never crop the portrait into the previously forced 4:5 box. */
+.intro {
+  grid-template-columns: minmax(0, 1fr) 200px;
+  column-gap: clamp(2rem, 5vw, 5rem);
+}
+.profile-photo {
+  width: 200px;
+  max-width: 100%;
+  justify-self: center;
+  transform: none;
+}
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 12px;
+}
+.profile-photo figcaption { justify-content:center; text-align:center; }
+@media (max-width: 800px) {
+  .intro { grid-template-columns: minmax(0, 1fr) 170px; }
+  .profile-photo { width: 170px; }
+}
+@media (max-width: 640px) {
+  .intro { grid-template-columns: 1fr; }
+  .profile-photo { width: 170px; justify-self: start; }
+  .profile-photo figcaption { justify-content:flex-start; }
+}
