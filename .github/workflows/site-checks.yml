@@ -1,0 +1,41 @@
+name: Site checks
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check HTML and local assets
+        run: |
+          python3 - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urldefrag
+          class Checker(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.urls = []
+              def handle_starttag(self, tag, attrs):
+                  fields = dict(attrs)
+                  if tag in ('a','link','script','img','source'):
+                      url = fields.get('href') or fields.get('src')
+                      if url:
+                          self.urls.append(url)
+          missing = []
+          for name in ('index.html', 'resume.html'):
+              parser = Checker()
+              parser.feed(Path(name).read_text(encoding='utf-8'))
+              for url in parser.urls:
+                  if url.startswith(('https:', 'http:', 'mailto:', 'data:', '#')):
+                      continue
+                  local, _ = urldefrag(url)
+                  if local and not Path(local).is_file():
+                      missing.append(f'{name}: {local}')
+          if missing:
+              raise SystemExit('Missing local assets: ' + ', '.join(missing))
+          print('Passed: HTML parses and local links resolve.')
+          PY
