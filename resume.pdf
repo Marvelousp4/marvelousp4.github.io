@@ -1,0 +1,126 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R] >>
+endobj
+4 0 obj
+<< /Length 7526 >>
+stream
+0.12 0.16 0.22 rg BT /F2 23.50 Tf 1 0 0 1 49.00 749.00 Tm (Linhao Bai) Tj ET
+0.35 0.39 0.45 rg BT /F1 9.40 Tf 1 0 0 1 49.00 725.00 Tm (Robotics Systems  |  Robot Learning  |  Distributed Robotics  |  AI) Tj ET
+0.13 0.34 0.57 rg BT /F1 8.15 Tf 1 0 0 1 49.00 707.00 Tm (Superbp4@gmail.com) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.20 Tf 1 0 0 1 137.22 707.00 Tm (|) Tj ET
+0.13 0.34 0.57 rg BT /F1 8.15 Tf 1 0 0 1 148.22 707.00 Tm (GitHub) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.20 Tf 1 0 0 1 184.45 707.00 Tm (|) Tj ET
+0.13 0.34 0.57 rg BT /F1 8.15 Tf 1 0 0 1 195.45 707.00 Tm (Website) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.20 Tf 1 0 0 1 235.83 707.00 Tm (|) Tj ET
+0.13 0.34 0.57 rg BT /F1 8.15 Tf 1 0 0 1 246.83 707.00 Tm (LinkedIn) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.20 Tf 1 0 0 1 290.22 707.00 Tm (|) Tj ET
+0.13 0.34 0.57 rg BT /F1 8.15 Tf 1 0 0 1 301.22 707.00 Tm (Scholar) Tj ET
+0.77 0.81 0.86 RG .6 w 49 694 m 563 694 l S
+0.13 0.34 0.57 rg BT /F2 9.50 Tf 1 0 0 1 49.00 681.00 Tm (EXPERIENCE) Tj ET
+0.77 0.81 0.86 RG .55 w 126.82480000000001 684.00 m 563 684.00 l S
+0.12 0.16 0.22 rg BT /F2 10.15 Tf 1 0 0 1 49.00 663.50 Tm (Tesla  |  Robotics Integrations Engineer) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.50 Tf 1 0 0 1 486.97 663.75 Tm (Sep 2026 - Present) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.25 Tf 1 0 0 1 49.00 651.40 Tm (Austin, TX  |  Mobile Robotics / Overmind) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 638.00 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 638.00 Tm (Work on production AMR, AGV, and ASRS systems, spanning multi-robot fleet orchestration, job/task sequencing, traffic) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 626.70 Tm (coordination, and robot-to-factory workflows.) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 613.30 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 613.30 Tm (Analyze system behavior across distributed services, Kubernetes, NATS messaging, telemetry, robot runtime, localization,) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 602.00 Tm (and PLC / OPC UA interfaces, connecting software state to physical operations.) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 588.60 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 588.60 Tm (Work with simulation and virtual commissioning to validate robotic tasks, workflow transitions, industrial equipment) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 577.30 Tm (interfaces, and factory automation scenarios.) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 563.90 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 563.90 Tm (Design AI-agent-assisted diagnostic workflows connecting incident evidence, logs, system configuration, and code context to) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 552.60 Tm (make robotics troubleshooting more repeatable.) Tj ET
+0.12 0.16 0.22 rg BT /F2 10.15 Tf 1 0 0 1 49.00 536.20 Tm (Georgia Tech  |  Graduate Research Assistant, STAR Lab) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.50 Tf 1 0 0 1 482.00 536.45 Tm (Oct 2024 - May 2026) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.25 Tf 1 0 0 1 49.00 524.10 Tm (Atlanta, GA) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 510.70 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 510.70 Tm (Researched dexterous robot learning, visuomotor dynamics, policy learning, and sim-to-real transfer; co-authored K-UBM) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 499.40 Tm (\(CoRL 2026\) and Video2Sim2Real.) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 486.00 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 486.00 Tm (Built ROS-based real-time learned-policy execution on a Kinova arm and dexterous hands, including joint command streaming,) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 474.70 Tm (synchronized control, and state feedback.) Tj ET
+0.12 0.16 0.22 rg BT /F2 10.15 Tf 1 0 0 1 49.00 459.30 Tm (SEER Robotics  |  Software Engineer / Project Manager) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.50 Tf 1 0 0 1 485.52 459.55 Tm (Jun 2022 - Jul 2024) Tj ET
+0.35 0.39 0.45 rg BT /F1 8.25 Tf 1 0 0 1 49.00 447.20 Tm (Shanghai, China) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 433.80 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 433.80 Tm (Developed C++ robot-controller utilities for OTA / backup, time synchronization, health monitoring, telemetry, and hardware) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 422.50 Tm (/ software interfaces.) Tj ET
+0.13 0.34 0.57 rg BT /F2 8.80 Tf 1 0 0 1 52.00 409.10 Tm (-) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 409.10 Tm (Worked on international AMR systems and a five-robot, 100+ rack warehouse system involving fleet scheduling, reservations,) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 62.00 397.80 Tm (queueing, SLAM / QR correction, and randomized robot tests.) Tj ET
+0.13 0.34 0.57 rg BT /F2 9.50 Tf 1 0 0 1 49.00 375.40 Tm (RESEARCH & PUBLICATIONS) Tj ET
+0.77 0.81 0.86 RG .55 w 201.22120000000004 378.40 m 563 378.40 l S
+0.12 0.16 0.22 rg BT /F2 9.10 Tf 1 0 0 1 49.00 357.90 Tm (K-UBM  |  CoRL 2026  |  Equal contribution) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 346.30 Tm (Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity.) Tj ET
+0.12 0.16 0.22 rg BT /F2 9.10 Tf 1 0 0 1 49.00 332.50 Tm (Video2Sim2Real  |  Preprint 2026) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 320.90 Tm (Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video.) Tj ET
+0.12 0.16 0.22 rg BT /F2 9.10 Tf 1 0 0 1 49.00 307.10 Tm (IEEE Signal Processing Letters  |  2026) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 295.50 Tm (A 1/R Law for Kurtosis Contrast in Balanced Mixtures.) Tj ET
+0.13 0.34 0.57 rg BT /F2 9.50 Tf 1 0 0 1 49.00 272.70 Tm (SELECTED PROJECTS) Tj ET
+0.77 0.81 0.86 RG .55 w 170.0498 275.70 m 563 275.70 l S
+0.12 0.16 0.22 rg BT /F2 9.10 Tf 1 0 0 1 49.00 255.20 Tm (Multi-Robot Planning & Scheduling Simulation) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 243.60 Tm (Reproduced multi-agent pathfinding and coordination methods in simulation, examining path conflicts, robot interactions, and) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 232.80 Tm (scheduling behavior.) Tj ET
+0.12 0.16 0.22 rg BT /F2 9.10 Tf 1 0 0 1 49.00 219.00 Tm (SO-101 & MicroDuck  |  Robot Learning Reproductions) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 207.40 Tm (Reproduced open-source manipulation and locomotion-learning methods, exploring imitation learning, reinforcement learning, policy) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.60 Tf 1 0 0 1 49.00 196.60 Tm (training, and evaluation.) Tj ET
+0.13 0.34 0.57 rg BT /F2 9.50 Tf 1 0 0 1 49.00 173.80 Tm (EDUCATION) Tj ET
+0.77 0.81 0.86 RG .55 w 120.304 176.80 m 563 176.80 l S
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 49.00 156.30 Tm (Georgia Institute of Technology  |  M.S. Computer Science, GPA 4.0 / 4.0  |  2026) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.80 Tf 1 0 0 1 49.00 143.30 Tm (Chongqing Jiaotong University  |  B.Eng. Water Resources Engineering  |  2022) Tj ET
+0.13 0.34 0.57 rg BT /F2 9.50 Tf 1 0 0 1 49.00 122.30 Tm (SKILLS) Tj ET
+0.77 0.81 0.86 RG .55 w 100.7416 125.30 m 563 125.30 l S
+0.12 0.16 0.22 rg BT /F1 8.35 Tf 1 0 0 1 49.00 104.80 Tm (Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation) Tj ET
+0.12 0.16 0.22 rg BT /F1 8.35 Tf 1 0 0 1 49.00 94.10 Tm (learning, reinforcement learning, Koopman dynamics, sim-to-real.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [49.00 705.50 128.22 716.65] /Border [0 0 0] /A << /S /URI /URI (mailto:Superbp4@gmail.com) >> >>
+endobj
+8 0 obj
+<< /Type /Annot /Subtype /Link /Rect [148.22 705.50 175.45 716.65] /Border [0 0 0] /A << /S /URI /URI (https://github.com/Marvelousp4) >> >>
+endobj
+9 0 obj
+<< /Type /Annot /Subtype /Link /Rect [195.45 705.50 226.83 716.65] /Border [0 0 0] /A << /S /URI /URI (https://marvelousp4.github.io/) >> >>
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [246.83 705.50 281.22 716.65] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/linhaobai/) >> >>
+endobj
+11 0 obj
+<< /Type /Annot /Subtype /Link /Rect [301.22 705.50 331.38 716.65] /Border [0 0 0] /A << /S /URI /URI (https://scholar.google.com/citations?user=MAtZMRIAAAAJ) >> >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000293 00000 n 
+0000007870 00000 n 
+0000007940 00000 n 
+0000008015 00000 n 
+0000008165 00000 n 
+0000008321 00000 n 
+0000008477 00000 n 
+0000008642 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+8823
+%%EOF
