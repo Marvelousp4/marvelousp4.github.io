@@ -52,51 +52,43 @@ function buildResumePdf(){
   urls.push({rect:[x,Y-2,x+width(label,8.8)+3,Y+9],url});
   return width(label,8.8);
  }
- const name="LINHAO BAI";put((W-width(name,22.6,true))/2,y,name,22.6,true);y-=25.5;
- const contactY=y;
- const items=[
-  ["Superbp4@gmail.com","mailto:Superbp4@gmail.com"],
-  ["marvelousp4.github.io","https://marvelousp4.github.io/"],
-  ["GitHub","https://github.com/Marvelousp4"],
-  ["Scholar","https://scholar.google.com/citations?user=MAtZMRIAAAAJ"],
-  ["LinkedIn","https://www.linkedin.com/in/linhaobai/"]
- ];
- let total=0;for(let k=0;k<items.length;k++)total+=width(items[k][0],8.8)+(k<items.length-1?17:0);
- let x=(W-total)/2;
- for(let k=0;k<items.length;k++){
-   x+=contact(items[k][0],items[k][1],x,contactY);
-   if(k<items.length-1){x+=7;put(x,contactY,"|",8.2);x+=10;}
+
+ const name="LINHAO BAI";put((W-width(name,22.6,true))/2,y,name,22.6,true);y-=26;
+ const subtitle="Robotics Software | Robot Learning | Sim-to-Real | Research Engineering";
+ put((W-width(subtitle,9.25))/2,y,subtitle,9.25);y-=17;
+ function contactRow(items,Y,sz=8.55){
+  let total=0;for(let k=0;k<items.length;k++)total+=width(items[k][0],sz)+(k<items.length-1?15:0);
+  let x=(W-total)/2;
+  for(let k=0;k<items.length;k++){put(x,Y,items[k][0],sz);urls.push({rect:[x,Y-2,x+width(items[k][0],sz)+2,Y+8],url:items[k][1]});x+=width(items[k][0],sz);if(k<items.length-1){x+=5;put(x,Y,"|",8);x+=10;}}
  }
- y-=17.5;
- title("Professional Experience");
- head("Tesla  -  Robotics Integrations Engineer","Sep 2026 - Present","Austin, TX  |  Mobile Robotics / Overmind");
- bullet("Work on large-scale AMR, AGV, and ASRS systems covering multi-robot coordination, task sequencing, fleet orchestration, production workflows, and robot-to-equipment interfaces.");
- bullet("Investigate behavior across distributed services, Kubernetes, NATS messaging, observability, robot runtimes, localization, and industrial PLC / OPC UA systems.");
- bullet("Work with simulation and virtual commissioning to test task logic, operational scenarios, and system behavior before and during production deployment.");
- bullet("Develop the design of AI-agent-assisted diagnostics that connect robot incidents, logs, system state, configurations, and source-level evidence.");
- y-=3.2;
- head("Georgia Tech STAR Lab  -  Graduate Research Assistant","Oct 2024 - May 2026","Atlanta, GA");
- bullet("Conducted robot-learning research in dexterous manipulation, visuomotor behavior models, residual reinforcement learning, and sim-to-real transfer.");
- bullet("Built ROS-based real-time learned-policy execution for a Kinova arm and dexterous hands, including synchronized commands, joint feedback, and experiment logging.");
- y-=3.2;
- head("SEER Robotics  -  Software Engineer / Project Manager","Jun 2022 - Jul 2024","Shanghai, China");
- bullet("Developed C++ robot-controller tools for telemetry, time synchronization, monitoring, OTA / backup, and robot software interfaces.");
- bullet("Worked on international AMR fleets and a five-AMR / 100+ rack warehouse system: routing, rack reservations, queueing, SLAM / QR correction, and randomized fleet tests.");
- title("Selected Research & Publications");
- project("Going with the Flow (K-UBM)  |  CoRL 2026  |  Equal co-second author","Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.","[paper]","https://arxiv.org/abs/2602.07413");
- project("Video2Sim2Real  |  2026 preprint","Co-authored a video-to-simulation-to-real pipeline for autonomous dexterous skill acquisition, involving perception, simulation, and policy learning.","[paper]","https://arxiv.org/abs/2606.08828");
- project("A 1/R Law for Kurtosis Contrast in Balanced Mixtures  |  IEEE SPL 2026","A signal processing publication on kurtosis contrast in balanced mixtures.");
- title("Selected Projects");
- project("Multi-Robot Pathfinding & Scheduling Simulation","Reproduced published multi-agent planning methods in simulation; studied route conflicts, collision avoidance, and fleet coordination.");
- project("SO-101 & MicroDuck  |  Robot Learning Reproductions","Reproduced open-source manipulation and locomotion learning experiments involving policy training, reinforcement learning, and simulation.");
+ contactRow([["(470) 603-0437","tel:+14706030437"],["Superbp4@gmail.com","mailto:Superbp4@gmail.com"],["marvelousp4.github.io","https://marvelousp4.github.io/"]],y);y-=12;
+ contactRow([["GitHub","https://github.com/Marvelousp4"],["Scholar","https://scholar.google.com/citations?user=MAtZMRIAAAAJ"],["LinkedIn","https://www.linkedin.com/in/linhaobai/"]],y);y-=10;
+ title("Experience");
+ head("Tesla - Robotics Integrations Engineer","Sep 2026 - Present","Austin, TX");
+ bullet("Integrate production AMR and ASRS software across fleet orchestration, task sequencing, localization, robot runtime / firmware, and PLC / OPC UA interfaces to factory equipment.");
+ bullet("Develop and debug multi-robot resource constraints, recovery workflows, and station handoffs; validate physical execution with robot telemetry, Python tooling, and distributed-service logs.");
+ y-=1.8;
+ head("Georgia Institute of Technology - STAR Lab","Oct 2024 - May 2026","Graduate Research Assistant, Robot Learning  |  Atlanta, GA");
+ bullet("Built a ROS learned-policy-to-hardware interface for a Kinova arm and PSYONIC / Allegro dexterous hands, integrating SDKs, joint feedback, nonblocking velocity commands, synchronization, timeouts, and logging.");
+ bullet("Modified and evaluated TD-MPC / TD-MPC2 world-model dynamics; compared MLP, linear, and SINDy-regularized variants using prediction error and planning returns to investigate dynamics-planner mismatch.");
+ bullet("Extended Diffusion Policy training and evaluation for DexArt: object-flow datasets, custom training workspace, checkpoint loading, and offline action-error evaluation.");
+ bullet("Used MuJoCo, NVIDIA Isaac Sim / Isaac Gym for robot-learning baselines and sim-to-real experiments; contributed to Video2Sim2Real perception, residual RL, and real-robot execution.");
+ y-=1.8;
+ head("SEER Robotics - Software Engineer / Project Manager","Jun 2022 - Jul 2024","Shanghai, China");
+ bullet("Developed C++ robot-controller services and integration plugins for OTA / backup, time synchronization, health monitoring, and telemetry; debugged firmware, LiDAR, localization, and robot interfaces.");
+ bullet("Delivered AMR solutions to 35+ international clients; led a 5-AMR / 100+ rack warehouse system with SLAM + QR correction, reservations, and randomized stress tests across hundreds of moves.");
+ title("Selected Robotics Research");
+ project("K-UBM | CoRL 2026 | Equal contribution","Going with the Flow: visual-flow / Koopman latent dynamics for long-horizon dexterous behavior and event-triggered replanning.","[paper]","https://arxiv.org/abs/2602.07413");
+ project("Video2Sim2Real | 2026 preprint","Video-to-simulation-to-real dexterous skill acquisition, spanning scene reconstruction, residual RL, and learned-policy execution on physical hardware.","[paper]","https://arxiv.org/abs/2606.08828");
  title("Education");
- put(L+2,y,"Georgia Institute of Technology  -  M.S. Computer Science",9.25,true);
- put(R-width("2024 - 2026",8.5),y,"2024 - 2026",8.5);y-=12.0;
- put(L+10,y,"GPA: 4.0 / 4.0",8.9);y-=14.1;
- put(L+2,y,"Chongqing Jiaotong University  -  B.Eng. Water Resources Engineering",9.05,true);
- put(R-width("2018 - 2022",8.5),y,"2018 - 2022",8.5);y-=12.1;
+ put(L+2,y,"Georgia Institute of Technology - M.S. Computer Science, GPA 4.0 / 4.0",9.1,true);
+ put(R-width("May 2026",8.4),y,"May 2026",8.4);y-=15.4;
+ put(L+2,y,"Chongqing Jiaotong University - B.Eng. Civil Engineering",9.0,true);
+ put(R-width("Jun 2022",8.4),y,"Jun 2022",8.4);y-=10.0;
  title("Technical Skills");
- lines("Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation learning, reinforcement learning, Koopman dynamics, sim-to-real, distributed systems.",{x:L+2,w:R-L-4,size:8.75,step:10.9});
+ lines("Programming / Systems: Python, C++, Bash, Linux, Git, Docker, Kubernetes, logging / telemetry, debugging",{x:L+2,w:R-L-4,size:8.75,step:10.9});
+ lines("Robotics / Hardware: ROS / ROS2, Kinova & hand SDKs, actuator control, sensor feedback, CAN, RS-485, OPC UA, LiDAR, SLAM, calibration",{x:L+2,w:R-L-4,size:8.75,step:10.9});
+ lines("Simulation / ML: MuJoCo, NVIDIA Isaac Sim, Isaac Gym, PyTorch, TD-MPC, MPPI, SINDy, Koopman, Diffusion Policy, imitation / reinforcement learning, sim-to-real",{x:L+2,w:R-L-4,size:8.75,step:10.9});
  const stream=cmds.join("\n")+"\n";
  const obj=[null,"<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>",null,`<< /Length ${stream.length} >>\nstream\n${stream}endstream`,
  "<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>",

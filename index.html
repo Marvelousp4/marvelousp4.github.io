@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="Linhao Bai">
-<meta name="description" content="Linhao Bai is a Robotics Integrations Engineer at Tesla and Georgia Tech MSCS graduate working on multi-robot systems, robot learning, simulation, and robotics software.">
-<meta name="theme-color" content="#f8fafc">
+<meta name="description" content="Linhao Bai builds robotics software connecting robot learning, simulation, real-world policy execution, and production robot systems. Tesla robotics engineer and Georgia Tech MSCS graduate.">
+<meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://marvelousp4.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Linhao Bai">
 <meta property="og:title" content="Linhao Bai — Robot Learning & Robotics Software">
-<meta property="og:description" content="Tesla robotics systems, multi-robot orchestration, distributed software, and research in robot learning and dexterous manipulation.">
+<meta property="og:description" content="Model-based RL, manipulation policy training and evaluation, sim-to-real, and production robotics software.">
 <meta property="og:url" content="https://marvelousp4.github.io/">
 <meta property="og:image" content="https://marvelousp4.github.io/images/linhao.jpg">
 <meta property="og:image:alt" content="Portrait of Linhao Bai">
@@ -34,10 +34,10 @@
 <main id="content" class="page-shell">
 <section id="top" class="intro" aria-labelledby="intro-title">
 <div class="intro-copy">
-<p class="role">Robotics Integrations Engineer at Tesla</p>
+<p class="role">Robotics Software · Robot Learning · Sim-to-Real</p>
 <h1 id="intro-title">Linhao Bai</h1>
-<p class="lead">I work on robotics software, from multi-robot systems running in factories to learned policies running on real robots.</p>
-<p class="intro-bio">I’m a Robotics Integrations Engineer at Tesla, working with autonomous mobile robots, fleet software, distributed systems, and factory automation. Before Tesla, I studied robot learning and dexterous manipulation at Georgia Tech’s STAR Lab, where I earned my M.S. in Computer Science. I also enjoy reproducing robot learning papers and trying algorithms in simulation.</p>
+<p class="lead">I build robotics software that connects learned policies, simulation, real hardware, and production systems.</p>
+<p class="intro-bio">I’m a Robotics Integrations Engineer at Tesla, working on mobile robot fleets, distributed software, and industrial robot interfaces. At Georgia Tech’s STAR Lab, I worked on world models, manipulation policy training and evaluation, and real-robot execution with a Kinova arm and dexterous hands. I earned my M.S. in Computer Science at Georgia Tech.</p>
 <div class="profile-links" aria-label="Profile links">
 <a class="primary-link" href="#experience">My work ↗</a>
 <a href="https://scholar.google.com/citations?user=MAtZMRIAAAAJ&hl=en">Scholar</a>
@@ -53,11 +53,14 @@
 <section id="experience" class="content-section" aria-labelledby="experience-title">
 <div class="section-title"><p class="section-index">01 / Experience</p><h2 id="experience-title">Work</h2></div>
 <div class="section-body experience-list">
-<article><div class="experience-date">Sep 2026 — Now</div><div><h3>Robotics Integrations Engineer</h3><p class="organization">Tesla · Austin, Texas</p>
-<p>I work on real factory robotics systems across autonomous mobile robots, AGVs, and ASRS. My work spans multi-robot fleet orchestration, scheduling and traffic behavior, job workflows, and the software interfaces connecting robots to manufacturing equipment.</p>
-<p>I spend a lot of time tracing problems across distributed services, robot runtimes, network and messaging layers, localization, and industrial controls. I also work on virtual commissioning and the design of AI-agent-assisted debugging tools for production robotics.</p></div></article>
-<article><div class="experience-date">2024 — 2026</div><div><h3>Graduate Research Assistant</h3><p class="organization">Georgia Tech · STAR Lab</p><p>I worked on robot learning and dexterous manipulation, including visuomotor behavior models, sim-to-real learning, and real-time policy execution with a Kinova arm and dexterous hands.</p></div></article>
-<article><div class="experience-date">2022 — 2024</div><div><h3>Software Engineer / Project Manager</h3><p class="organization">SEER Robotics · Shanghai</p><p>I developed C++ robot-controller tools and worked on AMR fleet software, localization, and warehouse robotics projects for international customers.</p></div></article>
+<article><div class="experience-date">Sep 2026 — Present</div><div><h3>Robotics Integrations Engineer</h3><p class="organization">Tesla · Austin, Texas</p>
+<p>I work on production AMR and ASRS software: fleet orchestration, task sequencing, resource constraints, localization, robot runtimes and firmware, and PLC / OPC UA interfaces.</p>
+<p>I debug station handoffs and recovery behavior across robots, distributed services, and industrial equipment, using telemetry, Python tooling, and physical-system validation.</p></div></article>
+<article><div class="experience-date">2024 — 2026</div><div><h3>Graduate Research Assistant</h3><p class="organization">Georgia Tech · STAR Lab</p>
+<p>I worked on model-based RL and dexterous manipulation: modifying and evaluating TD-MPC2 dynamics, building Diffusion Policy training and evaluation workflows for object-flow observations, and experimenting in MuJoCo, Isaac Sim, and Isaac Gym.</p>
+<p>I also built ROS control interfaces for learned-policy execution on a Kinova arm and dexterous hands, connecting robot SDKs, feedback, synchronized commands, and experiment logging.</p></div></article>
+<article><div class="experience-date">2022 — 2024</div><div><h3>Software Engineer / Project Manager</h3><p class="organization">SEER Robotics · Shanghai</p>
+<p>I developed C++ robot-controller services and integration plugins for health monitoring, telemetry, time synchronization, and OTA / backup. I worked with AMR fleet software, localization, and deployments for 35+ international clients, including a five-robot warehouse system with randomized fleet testing.</p></div></article>
 </div></section>
 
 <section id="work" class="content-section" aria-labelledby="work-title">
@@ -68,33 +71,43 @@
 <div class="project-copy"><p class="project-status">CoRL 2026 · Equal contribution</p>
 <h3>Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity</h3>
 <p class="authors">Yunhai Han, Jiaqi Fu*, <strong>Linhao Bai*</strong>, Ziyu Xiao*, et al.</p>
-<p>Koopman-based visuomotor behavior models for dexterous manipulation, using visual flow and event-triggered replanning.</p>
+<p>Visual-flow representations and Koopman latent dynamics for long-horizon visuomotor behavior generation and event-triggered online replanning in dexterous manipulation.</p>
 <div class="project-links"><a href="https://k-ubm.github.io/">Project ↗</a><a href="https://arxiv.org/abs/2602.07413">Paper ↗</a></div></div></article>
 <article class="project"><a class="project-image" href="https://video2sim2real.github.io/" aria-label="Explore the Video2Sim2Real project">
 <img src="images/video2sim2real_pipeline.png" loading="lazy" decoding="async" alt="Video2Sim2Real pipeline from human video to robot execution"></a>
 <div class="project-copy"><p class="project-status">2026 · Sim-to-real</p>
 <h3>Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video</h3>
 <p class="authors">Yunhai Han*, Jianuo Qiu*, <strong>Linhao Bai</strong>, Ziyu Xiao, et al.</p>
-<p>Learning dexterous skills from human video, through scene reconstruction, simulation, policy learning, and real-robot execution.</p>
+<p>From human video to scene and motion reconstruction, simulation, residual RL, and dexterous policy execution on real hardware.</p>
 <div class="project-links"><a href="https://video2sim2real.github.io/">Project ↗</a><a href="https://arxiv.org/abs/2606.08828">Paper ↗</a><a href="https://github.com/video2sim2real/video2sim2real">Code ↗</a></div></div></article>
 <article class="project"><div class="project-image video-image">
 <video controls muted playsinline preload="none" poster="images/inhandrotation.png" aria-label="Dexterous robot manipulation demo">
 <source src="images/inhandrotation.mp4" type="video/mp4">Your browser does not support video. <a href="images/inhandrotation.mp4">Watch the demo</a>.</video></div>
 <div class="project-copy"><p class="project-status">Research engineering · Real robot</p>
 <h3>Real-Time Policy Execution on Dexterous Hardware</h3>
-<p>Built ROS interfaces for learned-policy execution with a Kinova arm and dexterous hands, including command streaming, synchronized control, and feedback.</p>
+<p>Built a ROS policy-to-hardware control interface using Kinova and dexterous-hand SDKs, nonblocking joint-velocity commands, state feedback, synchronization, timeouts, and experiment logging.</p>
 <div class="project-links"><a href="images/inhandrotation.mp4">Watch demo ↗</a></div></div></article>
 </div></section>
 
 <section id="projects" class="content-section" aria-labelledby="projects-title">
-<div class="section-title"><p class="section-index">03 / Projects</p><h2 id="projects-title">Things I've built and tried</h2><p>Algorithms, paper reproductions, and experiments.</p></div>
+<div class="section-title"><p class="section-index">03 / Projects</p><h2 id="projects-title">Selected engineering projects</h2><p>Models, experiments, and robotics systems.</p></div>
 <div class="section-body project-list">
-<article class="project project-text"><div class="project-copy"><p class="project-status">Multi-agent planning · Simulation</p><h3>Multi-Robot Pathfinding &amp; Scheduling</h3><p>Implemented and tested multi-robot planning algorithms in simulation, working through path conflicts, robot coordination, and traffic behavior in shared spaces. I used the experiments to get a better feel for the tradeoffs between planning, scheduling, and real robot operations.</p></div></article>
-<article class="project project-text"><div class="project-copy"><p class="project-status">Imitation learning · SO-101</p><h3>Robot Manipulation Paper Reproductions</h3><p>Reproduced open-source robot learning methods with SO-101, working through manipulation policies, training workflows, and evaluation. A hands-on way for me to understand how learning algorithms behave beyond the paper.</p></div></article>
-<article class="project project-text"><div class="project-copy"><p class="project-status">Reinforcement learning · MicroDuck</p><h3>Locomotion RL Reproductions</h3><p>Reproduced reinforcement-learning locomotion experiments using the MicroDuck simulation environment. Explored policy learning and the practical details of getting simulated robots to move and recover.</p></div></article>
+<article class="project project-text"><div class="project-copy"><p class="project-status">Model-based reinforcement learning · World models</p>
+<h3>TD-MPC2 Dynamics &amp; Planning Evaluation</h3>
+<p>Modified and evaluated TD-MPC / TD-MPC2 world-model dynamics, comparing nonlinear MLP, linear, and SINDy-regularized variants. Studied prediction error, planning returns, and how mismatch between learned dynamics and a planner affects control.</p></div></article>
+<article class="project project-text"><div class="project-copy"><p class="project-status">Imitation learning · Training &amp; evaluation</p>
+<h3>Diffusion Policy for Dexterous Manipulation</h3>
+<p>Extended Diffusion Policy experiments for DexArt using object-flow observations, custom datasets, a training workspace, checkpoint-based inference, and offline action-error evaluation.</p>
+<div class="project-links"><a href="https://github.com/Marvelousp4/diffusion_policy">Code ↗</a><a href="https://github.com/Marvelousp4/diffusion_policy/blob/main/eval_dexart.py">Evaluation ↗</a></div></div></article>
+<article class="project project-text"><div class="project-copy"><p class="project-status">Multi-agent planning · Simulation</p>
+<h3>Multi-Robot Pathfinding &amp; Scheduling</h3>
+<p>Implemented and tested multi-robot planning methods in simulation, exploring route conflicts, resource contention, coordination, and scheduling tradeoffs.</p></div></article>
+<article class="project project-text"><div class="project-copy"><p class="project-status">Independent experiments · Robot learning</p>
+<h3>SO-101 &amp; Locomotion RL Reproductions</h3>
+<p>Reproduced open-source manipulation and locomotion learning experiments, working with policies, training runs, and evaluation in simulation.</p></div></article>
 </div></section>
 
-<section class="contact-section" aria-label="Contact"><p class="section-index">04 / Contact</p><h2>Let's connect.</h2><p>Always happy to talk about robots, software, and research. <a href="mailto:Superbp4@gmail.com">Email me ↗</a></p></section>
+<section class="contact-section" aria-label="Contact"><p class="section-index">04 / Contact</p><h2>Let's connect.</h2><p>Robotics software, robot learning, and research engineering. <a href="mailto:Superbp4@gmail.com">Email me ↗</a></p></section>
 </main>
 <footer class="site-footer"><div class="nav-shell"><p>© 2026 Linhao Bai</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
