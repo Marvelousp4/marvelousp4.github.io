@@ -34,14 +34,14 @@ function buildResumePdf(){
   return a.length;
  }
  function rule(Y){cmds.push(`0.16 0.16 0.16 RG 0.55 w ${L} ${Y.toFixed(2)} m ${R} ${Y.toFixed(2)} l S`);}
- function title(t){y-=6;put(L,y,t.toUpperCase(),10.2,true);y-=4;rule(y);y-=13.8;}
+ function title(t){y-=11;put(L,y,t.toUpperCase(),10.2,true);y-=4;rule(y);y-=17.0;}
  function head(label,date,extra){
   put(L,y,label,10.0,true);
   put(R-width(date,8.7),y,date,8.7);
   y-=12.4;
   if(extra){put(L+1,y,extra,8.65,false,true);y-=14.0;}else y-=1.5;
  }
- function bullet(s){put(L+7,y,"-",9.2);lines(s,{x:L,w:R-L-21,offset:21,size:9.0,step:11.25});y-=2.3;}
+ function bullet(s){put(L+7,y,"-",9.2);lines(s,{x:L,w:R-L-21,offset:21,size:9.0,step:11.25});y-=5.3;}
  function project(name,text,link,url){
   put(L+2,y,name,9.25,true);
   if(link){const lx=L+10+width(name,9.25,true);put(lx,y,link,8.65,false);urls.push({rect:[lx,y-2,lx+width(link,8.65)+3,y+9],url});}
@@ -83,7 +83,7 @@ function buildResumePdf(){
  bullet("Developed C++ robot-controller tools for telemetry, time synchronization, monitoring, OTA / backup, and robot software interfaces.");
  bullet("Worked on international AMR fleets and a five-AMR / 100+ rack warehouse system: routing, rack reservations, queueing, SLAM / QR correction, and randomized fleet tests.");
  title("Selected Research & Publications");
- project("Going with the Flow (K-UBM)  |  CoRL 2026  |  Equal contribution","Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.","[paper]","https://arxiv.org/abs/2602.07413");
+ project("Going with the Flow (K-UBM)  |  CoRL 2026  |  Equal co-second author","Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.","[paper]","https://arxiv.org/abs/2602.07413");
  project("Video2Sim2Real  |  2026 preprint","Co-authored a video-to-simulation-to-real pipeline for autonomous dexterous skill acquisition, involving perception, simulation, and policy learning.","[paper]","https://arxiv.org/abs/2606.08828");
  project("A 1/R Law for Kurtosis Contrast in Balanced Mixtures  |  IEEE SPL 2026","A signal processing publication on kurtosis contrast in balanced mixtures.");
  title("Selected Projects");
