@@ -9,7 +9,7 @@ A lightweight, accessible HTML/CSS portfolio hosted on GitHub Pages. No JavaScri
 ## Pages
 
 - [Home](https://marvelousp4.github.io/) — selected work, experience, and interests
-- [Resume](https://marvelousp4.github.io/resume.html) — print-friendly CV
+- [Resume](https://marvelousp4.github.io/resume.pdf) — one-page PDF resume
 
 ## Local preview
 
@@ -17,7 +17,7 @@ A lightweight, accessible HTML/CSS portfolio hosted on GitHub Pages. No JavaScri
 python3 -m http.server 8000
 ```
 
-Visit `http://localhost:8000` and use your browser's Print / Save PDF function for the resume.
+Open `http://localhost:8000/resume.pdf` to view the one-page resume. To rebuild it, run `node scripts/build_resume.mjs`.
 
 ## Notes
 
