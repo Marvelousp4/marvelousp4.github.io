@@ -39,16 +39,11 @@ jobs:
               raise SystemExit('Missing local assets: ' + ', '.join(missing))
           print('Passed: HTML parses and local links resolve.')
           PY
-      - name: Verify one-page PDF resume
+      - name: Verify one-page PDF resume (no regeneration)
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          pdf=Path('resume.pdf').read_bytes()
-          assert pdf.startswith(b'%PDF-1.4'), 'Missing PDF header'
-          assert b'/Count 1' in pdf, 'Resume must have one page'
-          assert b'/Type /Page ' in pdf, 'Missing page object'
-          assert pdf.rstrip().endswith(b'%%EOF'), 'Invalid PDF ending'
-          print('PDF structure looks correct.')
-          PY
-          node scripts/build_resume.mjs
-          git diff --exit-code -- resume.pdf
+          test -s resume.pdf
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+          test "$(pdfinfo resume.pdf | sed -n 's/^Pages:[[:space:]]*//p')" = "1"
+          pdftotext resume.pdf - | grep -q 'Robotics Software'
+          pdftotext resume.pdf - | grep -q 'Robot Learning'
+          echo "One-page PDF content verified."

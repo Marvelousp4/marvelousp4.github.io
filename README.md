@@ -1,26 +1,28 @@
 # Linhao Bai — Personal Website
 
-Personal website for [Linhao Bai](https://marvelousp4.github.io/).
+Personal portfolio: [marvelousp4.github.io](https://marvelousp4.github.io/)
 
-Robotics systems, autonomy, robot learning, and interests in embodied AI and scalable simulation.
+Robotics software, robot learning, sim-to-real, and real-world robot systems.
+A lightweight black-and-white HTML/CSS portfolio hosted on GitHub Pages.
 
-A lightweight, accessible HTML/CSS portfolio hosted on GitHub Pages. No JavaScript framework, tracking scripts, or external font dependencies.
+- [Home](https://marvelousp4.github.io/) — experience, research, and projects
+- [Resume](https://marvelousp4.github.io/resume.pdf) — V4, one-page PDF
 
-## Pages
+## Resume source of truth
 
-- [Home](https://marvelousp4.github.io/) — selected work, experience, and interests
-- [Resume](https://marvelousp4.github.io/resume.pdf) — one-page PDF resume
+`resume_source.tex` is the approved V4 LaTeX resume. The PDF is generated
+from that exact source without content or layout rewrites. The GitHub Actions
+workflow `.github/workflows/build-resume.yml` compiles it with pdfLaTeX
+and publishes `resume.pdf`. The Site checks workflow verifies the PDF without
+regenerating or overwriting it.
 
-## Local preview
+To preview locally:
 
-```bash
+```sh
+pdflatex -interaction=nonstopmode -halt-on-error -jobname=resume resume_source.tex
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/resume.pdf` to view the one-page resume. To rebuild it, run `node scripts/build_resume.mjs`.
+Visit http://localhost:8000/resume.pdf.
 
-## Notes
-
-This repository is published at **https://marvelousp4.github.io/**. It does **not** claim ownership of `linhaobai.com`.
-
-Public technical descriptions must remain factual and avoid proprietary employer details.
+Public work descriptions should not disclose proprietary employer information.

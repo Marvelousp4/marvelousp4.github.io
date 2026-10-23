@@ -1,0 +1,82 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.10in}
+\addtolength{\topmargin}{-.69in}
+\addtolength{\textheight}{1.36in}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedright\raggedbottom
+\urlstyle{same}
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\vspace{1pt}\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+\newcommand{\rhead}[4]{\vspace{2pt}\noindent\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & \textit{#2} \\[-1pt] {\small #3} & {\small #4}\end{tabular*}\vspace{-5pt}}
+\newcommand{\entry}[1]{\item\small{#1}}
+\newcommand{\blist}{\begin{itemize}[leftmargin=0.19in,topsep=3pt,itemsep=2pt,parsep=0pt,partopsep=0pt]}
+\newcommand{\elist}{\end{itemize}\vspace{0pt}}
+\newcommand{\hyper}[2]{\href{#1}{\underline{#2}}}
+
+\begin{document}
+\begin{center}
+  {\Huge\textbf{Linhao Bai}}\\[3pt]
+  {\normalsize Robotics Software $\vert$ Robot Learning $\vert$ Sim-to-Real $\vert$ Research Engineering}\\[4pt]
+  {\small (470) 603-0437 $\vert$ \hyper{mailto:Superbp4@gmail.com}{Superbp4@gmail.com} $\vert$
+  \hyper{https://marvelousp4.github.io/}{Portfolio} $\vert$
+  \hyper{https://linkedin.com/in/linhaobai}{LinkedIn} $\vert$
+  \hyper{https://github.com/Marvelousp4}{GitHub} $\vert$
+  \hyper{https://scholar.google.com/citations?user=MAtZMRIAAAAJ}{Scholar}}
+\end{center}
+\vspace{-8pt}
+
+\section{Experience}
+\rhead{Tesla}{Austin, TX}{Robotics Integrations Engineer}{Sep 2026 -- Present}
+\blist
+ \entry{Integrate \textbf{production AMR and ASRS software} across fleet orchestration, task sequencing, localization, robot runtime / firmware, and \textbf{PLC / OPC UA} interfaces to factory equipment.}
+ \entry{Develop and debug multi-robot \textbf{resource constraints, recovery workflows, and station handoffs}; validate physical execution using robot telemetry, Python tooling, and distributed-service logs.}
+\elist
+\rhead{Georgia Institute of Technology -- STAR Lab}{Atlanta, GA}{Graduate Research Assistant, Robot Learning}{Oct 2024 -- May 2026}
+\blist
+ \entry{Built a \textbf{ROS learned-policy-to-hardware control interface} for a Kinova arm and PSYONIC / Allegro dexterous hands, integrating robot SDKs, joint-state feedback, nonblocking velocity commands, arm/hand synchronization, timeouts, and experiment logging.}
+ \entry{Modified and evaluated \textbf{TD-MPC / TD-MPC2 world-model dynamics} in model-based RL experiments; compared MLP, linear, and \textbf{SINDy-regularized} variants using predictive error and planning returns, exposing dynamics--planner mismatch.}
+ \entry{Extended \textbf{Diffusion Policy training and evaluation} for DexArt manipulation: object-flow observation datasets, custom training workspace, checkpoint loading, and offline action-error evaluation across tasks. \hyper{https://github.com/Marvelousp4/diffusion_policy}{Code}}
+ \entry{Used \textbf{MuJoCo, NVIDIA Isaac Sim / Isaac Gym} for robot-learning baselines, custom experiments, simulated-manipulation evaluation, and \textbf{sim-to-real} development; contributed to Video2Sim2Real perception, residual RL, and real-robot execution.}
+\elist
+\rhead{SEER Robotics}{Shanghai, China}{Project Manager / Software Engineer}{Jun 2022 -- Jul 2024}
+\blist
+ \entry{Developed \textbf{C++ robot-controller services and integration plugins} for OTA / backup, time synchronization, \textbf{health monitoring}, and telemetry; debugged firmware, LiDAR / localization, and fleet-to-robot interfaces.}
+ \entry{Delivered AMR solutions to \textbf{35+ international clients}; led a \textbf{5-AMR / 100+ rack} warehouse system with SLAM + QR localization correction, rack reservations, and randomized multi-robot stress tests across hundreds of moves.}
+\elist
+
+\section{Selected Robotics Research}
+\blist
+ \entry{\textbf{Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity} -- \textit{CoRL 2026, equal contribution}. Learned visual-flow / Koopman latent dynamics for long-horizon prediction and event-triggered replanning. \hyper{https://k-ubm.github.io/}{Project} $\vert$ \hyper{https://arxiv.org/abs/2602.07413}{Paper}}
+ \entry{\textbf{Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video} -- \textit{2026 preprint}. Video / scene reconstruction $\rightarrow$ simulation / residual RL $\rightarrow$ physical manipulation. \hyper{https://video2sim2real.github.io/}{Project} $\vert$ \hyper{https://arxiv.org/abs/2606.08828}{Paper}}
+\elist
+
+\section{Education}
+\vspace{1pt}
+\noindent\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{Georgia Institute of Technology} -- M.S. Computer Science, \textbf{GPA 4.0 / 4.0} & \textit{May 2026}\\[2pt]
+\textbf{Chongqing Jiaotong University} -- B.Eng. Civil Engineering & \textit{Jun 2022}
+\end{tabular*}
+\vspace{-2pt}
+
+\section{Technical Skills}
+\vspace{1pt}
+\small
+\textbf{Programming / Systems:} Python, C++, Bash, Linux, Git, Docker, Kubernetes, logging / telemetry, debugging\\[2pt]
+\textbf{Robotics / Hardware:} ROS / ROS2, Kinova and dexterous-hand SDKs, actuator control, sensor feedback, CAN, RS-485, OPC UA, LiDAR, SLAM, calibration\\[2pt]
+\textbf{Simulation / ML:} MuJoCo, NVIDIA Isaac Sim, Isaac Gym, PyTorch, TD-MPC, MPPI, SINDy, Koopman dynamics, Diffusion Policy, imitation / reinforcement learning, sim-to-real
+\end{document}
