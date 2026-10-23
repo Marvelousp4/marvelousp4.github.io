@@ -278,3 +278,68 @@ a.project-image:hover { border-color:#aac2e5; transform:translateY(-2px); }
   .resume-entry h3 { font-size:.92rem; }
   .resume-paper li { margin-bottom:2px; }
 }
+
+/* Classic monochrome researcher portfolio: no colored UI or marketing cards. */
+:root {
+  --bg:#ffffff; --ink:#111111; --muted:#444444; --soft:#ffffff;
+  --line:#dddddd; --link:#111111; --accent:#111111;
+  --accent-soft:#ffffff; --max:1020px;
+}
+html { scroll-padding-top:72px; }
+body { background:#fff; color:#111; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:1.62; }
+a { color:#111; text-decoration:underline; text-underline-offset:2px; }
+a:hover { color:#000; }
+h1,h2,h3 { color:#111; letter-spacing:-.025em; }
+h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(2.75rem,4.4vw,3.9rem); line-height:1.1; font-weight:700; }
+h2 { font-family:Georgia,"Times New Roman",serif; font-size:1.7rem; line-height:1.24; letter-spacing:-.02em; }
+h3 { font-size:1.02rem; }
+.site-header { background:#fff; border-bottom:1px solid #e5e5e5; backdrop-filter:none; }
+.site-header .nav-shell { min-height:56px; }
+.wordmark,.wordmark-dot { color:#111; }
+.nav-links { gap:.45rem 1.1rem; }
+.nav-links a { color:#222; text-decoration:none; }
+.nav-links a:hover { text-decoration:underline; }
+.intro { grid-template-columns:minmax(0,1fr) 205px; gap:3rem; padding-block:3.8rem 3.7rem; }
+.intro-copy .role { color:#444; font-size:.88rem; letter-spacing:0; text-transform:none; font-weight:600; margin-bottom:.8rem; }
+.role-mark,.caption-dot { background:#222; width:5px; height:5px; flex-basis:5px; }
+.intro-copy .lead { max-width:700px; color:#222; font-size:1.14rem; line-height:1.56; margin-top:1.0rem; letter-spacing:0; }
+.intro-copy > .intro-bio { margin-top:.9rem; color:#333; font-size:.98rem; line-height:1.7; }
+.profile-links { margin-top:1.3rem; gap:.5rem 1.05rem; font-size:.91rem; }
+.profile-links a:not(.primary-link),.profile-links .primary-link { color:#111; font-weight:500; padding:0; border:none; background:transparent; border-radius:0; text-decoration:underline; }
+.profile-links .primary-link:hover { background:transparent; color:#000; text-decoration:underline; }
+.profile-photo { width:205px; }
+.profile-photo img { border-radius:3px; box-shadow:none; border:1px solid #e2e2e2; }
+.profile-photo figcaption { color:#555; font-size:.76rem; }
+.content-section { grid-template-columns:160px minmax(0,1fr); gap:2.5rem; padding-block:3.1rem; border-top:1px solid #d0d0d0; }
+.section-index,.project-status,.card-kicker { color:#555; font-size:.72rem; letter-spacing:.015em; text-transform:none; font-weight:600; }
+.section-title > p:not(.section-index) { max-width:180px; color:#555; font-size:.88rem; }
+.project { grid-template-columns:205px minmax(0,1fr); gap:1.4rem; padding-block:1.7rem; border-bottom:1px solid #e5e5e5; }
+.project-image { border:1px solid #e5e5e5; border-radius:2px; background:#fff; }
+.project-image img { max-height:170px; }
+.project-copy h3 { font-size:1.04rem; margin:.3rem 0 .5rem; }
+.project-copy > p:not(.project-status):not(.authors) { color:#333; font-size:.94rem; }
+.project-links { font-size:.86rem; }
+.project-links a { color:#111; }
+.experience-list article { border-color:#e5e5e5; padding-block:1.25rem; }
+.experience-list .organization { color:#222; }
+.experience-list article > div:last-child p:not(.organization) { color:#333; }
+.experience-date { color:#555; }
+.project.project-text { grid-template-columns:1fr; }
+.project.project-text .project-copy { max-width:750px; }
+.contact-section { padding-block:3.25rem 4rem; }
+.contact-section h2 { font-size:1.65rem; }
+.contact-section p:last-child { color:#444; }
+.site-footer { background:#fff; border-top:1px solid #ddd; color:#555; }
+@media(max-width:800px) {
+  .intro { grid-template-columns:minmax(0,1fr) 155px; gap:1.6rem; }
+  .profile-photo { width:155px; }
+  .content-section { grid-template-columns:1fr; gap:1.2rem; }
+  .section-title > p:not(.section-index) { max-width:none; }
+  .project { grid-template-columns:205px minmax(0,1fr); }
+}
+@media(max-width:640px) {
+  .intro { grid-template-columns:1fr; padding-block:2.5rem; gap:1.5rem; }
+  .profile-photo { width:170px; }
+  .project { grid-template-columns:1fr; }
+  .site-header .nav-shell { padding-block:.7rem; }
+}
