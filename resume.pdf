@@ -21,67 +21,67 @@ stream
 0 0 0 rg BT /F1 8.80 Tf 1 0 0 1 384.16 725.50 Tm (Scholar) Tj ET
 0 0 0 rg BT /F1 8.20 Tf 1 0 0 1 418.62 725.50 Tm (|) Tj ET
 0 0 0 rg BT /F1 8.80 Tf 1 0 0 1 428.62 725.50 Tm (LinkedIn) Tj ET
-0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 702.00 Tm (PROFESSIONAL EXPERIENCE) Tj ET
-0.16 0.16 0.16 RG 0.55 w 42 698.00 m 570 698.00 l S
-0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 684.20 Tm (Tesla  -  Robotics Integrations Engineer) Tj ET
-0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 501.71 684.20 Tm (Sep 2026 - Present) Tj ET
-0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 671.80 Tm (Austin, TX  |  Mobile Robotics / Overmind) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 657.80 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 657.80 Tm (Work on large-scale AMR, AGV, and ASRS systems covering multi-robot coordination, task sequencing, fleet orchestration,) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 646.55 Tm (production workflows, and robot-to-equipment interfaces.) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 633.00 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 633.00 Tm (Investigate behavior across distributed services, Kubernetes, NATS messaging, observability, robot runtimes, localization, and) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 621.75 Tm (industrial PLC / OPC UA systems.) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 608.20 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 608.20 Tm (Work with simulation and virtual commissioning to test task logic, operational scenarios, and system behavior before and during) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 596.95 Tm (production deployment.) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 583.40 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 583.40 Tm (Develop the design of AI-agent-assisted diagnostics that connect robot incidents, logs, system state, configurations, and source-level) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 572.15 Tm (evidence.) Tj ET
-0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 555.40 Tm (Georgia Tech STAR Lab  -  Graduate Research Assistant) Tj ET
-0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 495.18 555.40 Tm (Oct 2024 - May 2026) Tj ET
-0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 543.00 Tm (Atlanta, GA) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 529.00 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 529.00 Tm (Conducted robot-learning research in dexterous manipulation, visuomotor behavior models, residual reinforcement learning, and) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 517.75 Tm (sim-to-real transfer.) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 504.20 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 504.20 Tm (Built ROS-based real-time learned-policy execution for a Kinova arm and dexterous hands, including synchronized commands, joint) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 492.95 Tm (feedback, and experiment logging.) Tj ET
-0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 476.20 Tm (SEER Robotics  -  Software Engineer / Project Manager) Tj ET
-0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 497.44 476.20 Tm (Jun 2022 - Jul 2024) Tj ET
-0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 463.80 Tm (Shanghai, China) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 449.80 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 449.80 Tm (Developed C++ robot-controller tools for telemetry, time synchronization, monitoring, OTA / backup, and robot software interfaces.) Tj ET
-0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 436.25 Tm (-) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 436.25 Tm (Worked on international AMR fleets and a five-AMR / 100+ rack warehouse system: routing, rack reservations, queueing, SLAM / QR) Tj ET
-0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 425.00 Tm (correction, and randomized fleet tests.) Tj ET
-0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 405.45 Tm (SELECTED RESEARCH & PUBLICATIONS) Tj ET
-0.16 0.16 0.16 RG 0.55 w 42 401.45 m 570 401.45 l S
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 387.65 Tm (Going with the Flow \(K-UBM\)  |  CoRL 2026  |  Equal contribution) Tj ET
-0 0 0 rg BT /F1 8.65 Tf 1 0 0 1 311.60 387.65 Tm ([paper]) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 375.65 Tm (Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.) Tj ET
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 361.05 Tm (Video2Sim2Real  |  2026 preprint) Tj ET
-0 0 0 rg BT /F1 8.65 Tf 1 0 0 1 182.37 361.05 Tm ([paper]) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 349.05 Tm (Co-authored a video-to-simulation-to-real pipeline for autonomous dexterous skill acquisition, involving perception, simulation, and policy learning.) Tj ET
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 334.45 Tm (A 1/R Law for Kurtosis Contrast in Balanced Mixtures  |  IEEE SPL 2026) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 322.45 Tm (A signal processing publication on kurtosis contrast in balanced mixtures.) Tj ET
-0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 301.85 Tm (SELECTED PROJECTS) Tj ET
-0.16 0.16 0.16 RG 0.55 w 42 297.85 m 570 297.85 l S
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 284.05 Tm (Multi-Robot Pathfinding & Scheduling Simulation) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 272.05 Tm (Reproduced published multi-agent planning methods in simulation; studied route conflicts, collision avoidance, and fleet coordination.) Tj ET
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 257.45 Tm (SO-101 & MicroDuck  |  Robot Learning Reproductions) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 245.45 Tm (Reproduced open-source manipulation and locomotion learning experiments involving policy training, reinforcement learning, and simulation.) Tj ET
-0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 224.85 Tm (EDUCATION) Tj ET
-0.16 0.16 0.16 RG 0.55 w 42 220.85 m 570 220.85 l S
-0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 207.05 Tm (Georgia Institute of Technology  -  M.S. Computer Science) Tj ET
-0 0 0 rg BT /F1 8.50 Tf 1 0 0 1 528.86 207.05 Tm (2024 - 2026) Tj ET
-0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 52.00 195.05 Tm (GPA: 4.0 / 4.0) Tj ET
-0 0 0 rg BT /F2 9.05 Tf 1 0 0 1 44.00 180.95 Tm (Chongqing Jiaotong University  -  B.Eng. Water Resources Engineering) Tj ET
-0 0 0 rg BT /F1 8.50 Tf 1 0 0 1 528.86 180.95 Tm (2018 - 2022) Tj ET
-0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 162.85 Tm (TECHNICAL SKILLS) Tj ET
-0.16 0.16 0.16 RG 0.55 w 42 158.85 m 570 158.85 l S
-0 0 0 rg BT /F1 8.75 Tf 1 0 0 1 44.00 145.05 Tm (Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation learning,) Tj ET
-0 0 0 rg BT /F1 8.75 Tf 1 0 0 1 44.00 134.15 Tm (reinforcement learning, Koopman dynamics, sim-to-real, distributed systems.) Tj ET
+0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 697.00 Tm (PROFESSIONAL EXPERIENCE) Tj ET
+0.16 0.16 0.16 RG 0.55 w 42 693.00 m 570 693.00 l S
+0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 676.00 Tm (Tesla  -  Robotics Integrations Engineer) Tj ET
+0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 501.71 676.00 Tm (Sep 2026 - Present) Tj ET
+0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 663.60 Tm (Austin, TX  |  Mobile Robotics / Overmind) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 649.60 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 649.60 Tm (Work on large-scale AMR, AGV, and ASRS systems covering multi-robot coordination, task sequencing, fleet orchestration,) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 638.35 Tm (production workflows, and robot-to-equipment interfaces.) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 621.80 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 621.80 Tm (Investigate behavior across distributed services, Kubernetes, NATS messaging, observability, robot runtimes, localization, and) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 610.55 Tm (industrial PLC / OPC UA systems.) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 594.00 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 594.00 Tm (Work with simulation and virtual commissioning to test task logic, operational scenarios, and system behavior before and during) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 582.75 Tm (production deployment.) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 566.20 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 566.20 Tm (Develop the design of AI-agent-assisted diagnostics that connect robot incidents, logs, system state, configurations, and source-level) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 554.95 Tm (evidence.) Tj ET
+0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 535.20 Tm (Georgia Tech STAR Lab  -  Graduate Research Assistant) Tj ET
+0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 495.18 535.20 Tm (Oct 2024 - May 2026) Tj ET
+0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 522.80 Tm (Atlanta, GA) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 508.80 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 508.80 Tm (Conducted robot-learning research in dexterous manipulation, visuomotor behavior models, residual reinforcement learning, and) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 497.55 Tm (sim-to-real transfer.) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 481.00 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 481.00 Tm (Built ROS-based real-time learned-policy execution for a Kinova arm and dexterous hands, including synchronized commands, joint) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 469.75 Tm (feedback, and experiment logging.) Tj ET
+0 0 0 rg BT /F2 10.00 Tf 1 0 0 1 42.00 450.00 Tm (SEER Robotics  -  Software Engineer / Project Manager) Tj ET
+0 0 0 rg BT /F1 8.70 Tf 1 0 0 1 497.44 450.00 Tm (Jun 2022 - Jul 2024) Tj ET
+0 0 0 rg BT /F3 8.65 Tf 1 0 0 1 43.00 437.60 Tm (Shanghai, China) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 423.60 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 423.60 Tm (Developed C++ robot-controller tools for telemetry, time synchronization, monitoring, OTA / backup, and robot software interfaces.) Tj ET
+0 0 0 rg BT /F1 9.20 Tf 1 0 0 1 49.00 407.05 Tm (-) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 407.05 Tm (Worked on international AMR fleets and a five-AMR / 100+ rack warehouse system: routing, rack reservations, queueing, SLAM / QR) Tj ET
+0 0 0 rg BT /F1 9.00 Tf 1 0 0 1 63.00 395.80 Tm (correction, and randomized fleet tests.) Tj ET
+0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 368.25 Tm (SELECTED RESEARCH & PUBLICATIONS) Tj ET
+0.16 0.16 0.16 RG 0.55 w 42 364.25 m 570 364.25 l S
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 347.25 Tm (Going with the Flow \(K-UBM\)  |  CoRL 2026  |  Equal co-second author) Tj ET
+0 0 0 rg BT /F1 8.65 Tf 1 0 0 1 330.56 347.25 Tm ([paper]) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 335.25 Tm (Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.) Tj ET
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 320.65 Tm (Video2Sim2Real  |  2026 preprint) Tj ET
+0 0 0 rg BT /F1 8.65 Tf 1 0 0 1 182.37 320.65 Tm ([paper]) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 308.65 Tm (Co-authored a video-to-simulation-to-real pipeline for autonomous dexterous skill acquisition, involving perception, simulation, and policy learning.) Tj ET
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 294.05 Tm (A 1/R Law for Kurtosis Contrast in Balanced Mixtures  |  IEEE SPL 2026) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 282.05 Tm (A signal processing publication on kurtosis contrast in balanced mixtures.) Tj ET
+0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 256.45 Tm (SELECTED PROJECTS) Tj ET
+0.16 0.16 0.16 RG 0.55 w 42 252.45 m 570 252.45 l S
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 235.45 Tm (Multi-Robot Pathfinding & Scheduling Simulation) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 223.45 Tm (Reproduced published multi-agent planning methods in simulation; studied route conflicts, collision avoidance, and fleet coordination.) Tj ET
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 208.85 Tm (SO-101 & MicroDuck  |  Robot Learning Reproductions) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 44.00 196.85 Tm (Reproduced open-source manipulation and locomotion learning experiments involving policy training, reinforcement learning, and simulation.) Tj ET
+0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 171.25 Tm (EDUCATION) Tj ET
+0.16 0.16 0.16 RG 0.55 w 42 167.25 m 570 167.25 l S
+0 0 0 rg BT /F2 9.25 Tf 1 0 0 1 44.00 150.25 Tm (Georgia Institute of Technology  -  M.S. Computer Science) Tj ET
+0 0 0 rg BT /F1 8.50 Tf 1 0 0 1 528.86 150.25 Tm (2024 - 2026) Tj ET
+0 0 0 rg BT /F1 8.90 Tf 1 0 0 1 52.00 138.25 Tm (GPA: 4.0 / 4.0) Tj ET
+0 0 0 rg BT /F2 9.05 Tf 1 0 0 1 44.00 124.15 Tm (Chongqing Jiaotong University  -  B.Eng. Water Resources Engineering) Tj ET
+0 0 0 rg BT /F1 8.50 Tf 1 0 0 1 528.86 124.15 Tm (2018 - 2022) Tj ET
+0 0 0 rg BT /F2 10.20 Tf 1 0 0 1 42.00 101.05 Tm (TECHNICAL SKILLS) Tj ET
+0.16 0.16 0.16 RG 0.55 w 42 97.05 m 570 97.05 l S
+0 0 0 rg BT /F1 8.75 Tf 1 0 0 1 44.00 80.05 Tm (Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation learning,) Tj ET
+0 0 0 rg BT /F1 8.75 Tf 1 0 0 1 44.00 69.15 Tm (reinforcement learning, Koopman dynamics, sim-to-real, distributed systems.) Tj ET
 endstream
 endobj
 5 0 obj
@@ -109,10 +109,10 @@ endobj
 << /Type /Annot /Subtype /Link /Rect [428.62 723.50 463.12 734.50] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/linhaobai/) >> >>
 endobj
 13 0 obj
-<< /Type /Annot /Subtype /Link /Rect [311.60 385.65 339.08 396.65] /Border [0 0 0] /A << /S /URI /URI (https://arxiv.org/abs/2602.07413) >> >>
+<< /Type /Annot /Subtype /Link /Rect [330.56 345.25 358.04 356.25] /Border [0 0 0] /A << /S /URI /URI (https://arxiv.org/abs/2602.07413) >> >>
 endobj
 14 0 obj
-<< /Type /Annot /Subtype /Link /Rect [182.37 359.05 209.85 370.05] /Border [0 0 0] /A << /S /URI /URI (https://arxiv.org/abs/2606.08828) >> >>
+<< /Type /Annot /Subtype /Link /Rect [182.37 318.65 209.85 329.65] /Border [0 0 0] /A << /S /URI /URI (https://arxiv.org/abs/2606.08828) >> >>
 endobj
 xref
 0 15
