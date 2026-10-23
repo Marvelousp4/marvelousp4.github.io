@@ -1,71 +1,118 @@
-// This source regenerates the single-page PDF at ../resume.pdf with Node.js.
-// Run: node scripts/build_resume.mjs
+// Classic black-and-white, one-page research/engineering resume.
+// Rebuild with: node scripts/build_resume.mjs
 import fs from "node:fs";
 
-function buildResumePdf() {
- const W=612,H=792,L=49,R=563;
- let y=749, minY=749;
- const commands=[],links=[];
- const rgb={ink:"0.12 0.16 0.22",muted:"0.35 0.39 0.45",blue:"0.13 0.34 0.57",rule:"0.77 0.81 0.86"};
- function esc(s){return s.replace(/\\/g,"\\\\").replace(/\(/g,"\\(").replace(/\)/g,"\\)");}
- function estimate(s,size,bold=false){let units=0;for(let i=0;i<s.length;i++){let c=s[i];units+=(c===" "?.275:"il.,:;!|'".includes(c)?.245:"mwMW@#%".includes(c)?.81:"ABCDEFGHJKLMNOPQRSTUVWXYZ".includes(c)?.66:"abcdefghjknopqrstuvwxyz".includes(c)?.51:"0123456789".includes(c)?.55:.52);}return units*size*(bold?1.04:1);}
- function textAt(x,Y,s,size=9,bold=false,color="ink"){commands.push(`${rgb[color]} rg BT /F${bold?2:1} ${size.toFixed(2)} Tf 1 0 0 1 ${x.toFixed(2)} ${Y.toFixed(2)} Tm (${esc(s)}) Tj ET`);minY=Math.min(minY,Y);}
- function underline(Y){commands.push(`${rgb.rule} RG .6 w ${L} ${Y} m ${R} ${Y} l S`);}
- function wrap(s,maxW,size=8.85,bold=false){const words=s.split(/\s+/);let out=[],line="";for(const w of words){const next=line?line+" "+w:w;if(line&&estimate(next,size,bold)>maxW){out.push(line);line=w;}else line=next;}if(line)out.push(line);return out;}
- function paragraph(s,indent=0,opt={}){const size=opt.size||8.8,lead=opt.lead||11.35;const ls=wrap(s,R-L-indent,size,opt.bold||false);for(const line of ls){textAt(L+indent,y,line,size,opt.bold||false,opt.color||"ink");y-=lead;}return ls.length;}
- function bul(s){textAt(L+3,y,"-",8.8,true,"blue");paragraph(s,13,{size:8.8,lead:11.3});y-=2.1;}
- function heading(label){y-=9;textAt(L,y,label.toUpperCase(),9.5,true,"blue");commands.push(`${rgb.rule} RG .55 w ${L+estimate(label.toUpperCase(),9.5,true)+14} ${(y+3).toFixed(2)} m ${R} ${(y+3).toFixed(2)} l S`);y-=17.5;}
- function company(name,date,subtitle){textAt(L,y,name,10.15,true);textAt(R-estimate(date,8.5,false),y+0.25,date,8.5,false,"muted");y-=12.1;if(subtitle){textAt(L,y,subtitle,8.25,false,"muted");y-=13.4;}else{y-=3.0;}}
- function namedLine(name,details){textAt(L,y,name,9.1,true);y-=11.6;paragraph(details,0,{size:8.6,lead:10.8});y-=3;}
- function link(x,Y,label,url,size=8.3){textAt(x,Y,label,size,false,"blue");let width=estimate(label,size);links.push({rect:[x,Y-1.5,x+width+2,Y+size+1.5],url});return width;}
- function separator(x,Y){textAt(x,Y,"|",8.2,false,"muted");return 11;}
- textAt(L,y,"Linhao Bai",23.5,true);y-=24;
- textAt(L,y,"Robotics Systems  |  Robot Learning  |  Distributed Robotics  |  AI",9.4,false,"muted");y-=18;
- let x=L;const yy=y;
- x+=link(x,yy,"Superbp4@gmail.com","mailto:Superbp4@gmail.com",8.15)+11;x+=separator(x,yy);
- x+=link(x,yy,"GitHub","https://github.com/Marvelousp4",8.15)+11;x+=separator(x,yy);
- x+=link(x,yy,"Website","https://marvelousp4.github.io/",8.15)+11;x+=separator(x,yy);
- x+=link(x,yy,"LinkedIn","https://www.linkedin.com/in/linhaobai/",8.15)+11;x+=separator(x,yy);
- link(x,yy,"Scholar","https://scholar.google.com/citations?user=MAtZMRIAAAAJ",8.15);
- y-=13;underline(y);y-=4;
- heading("Experience");
- company("Tesla  |  Robotics Integrations Engineer","Sep 2026 - Present","Austin, TX  |  Mobile Robotics / Overmind");
- bul("Work on production AMR, AGV, and ASRS systems, spanning multi-robot fleet orchestration, job/task sequencing, traffic coordination, and robot-to-factory workflows.");
- bul("Analyze system behavior across distributed services, Kubernetes, NATS messaging, telemetry, robot runtime, localization, and PLC / OPC UA interfaces, connecting software state to physical operations.");
- bul("Work with simulation and virtual commissioning to validate robotic tasks, workflow transitions, industrial equipment interfaces, and factory automation scenarios.");
- bul("Design AI-agent-assisted diagnostic workflows connecting incident evidence, logs, system configuration, and code context to make robotics troubleshooting more repeatable.");
- y-=3;
- company("Georgia Tech  |  Graduate Research Assistant, STAR Lab","Oct 2024 - May 2026","Atlanta, GA");
- bul("Researched dexterous robot learning, visuomotor dynamics, policy learning, and sim-to-real transfer; co-authored K-UBM (CoRL 2026) and Video2Sim2Real.");
- bul("Built ROS-based real-time learned-policy execution on a Kinova arm and dexterous hands, including joint command streaming, synchronized control, and state feedback.");
- y-=2;
- company("SEER Robotics  |  Software Engineer / Project Manager","Jun 2022 - Jul 2024","Shanghai, China");
- bul("Developed C++ robot-controller utilities for OTA / backup, time synchronization, health monitoring, telemetry, and hardware / software interfaces.");
- bul("Worked on international AMR systems and a five-robot, 100+ rack warehouse system involving fleet scheduling, reservations, queueing, SLAM / QR correction, and randomized robot tests.");
- heading("Research & Publications");
- namedLine("K-UBM  |  CoRL 2026  |  Equal contribution","Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity.");
- namedLine("Video2Sim2Real  |  Preprint 2026","Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video.");
- namedLine("IEEE Signal Processing Letters  |  2026","A 1/R Law for Kurtosis Contrast in Balanced Mixtures.");
- heading("Selected Projects");
- namedLine("Multi-Robot Planning & Scheduling Simulation","Reproduced multi-agent pathfinding and coordination methods in simulation, examining path conflicts, robot interactions, and scheduling behavior.");
- namedLine("SO-101 & MicroDuck  |  Robot Learning Reproductions","Reproduced open-source manipulation and locomotion-learning methods, exploring imitation learning, reinforcement learning, policy training, and evaluation.");
- heading("Education");
- const ga="Georgia Institute of Technology  |  M.S. Computer Science, GPA 4.0 / 4.0  |  2026";
- textAt(L,y,ga,8.8);y-=13;
- textAt(L,y,"Chongqing Jiaotong University  |  B.Eng. Water Resources Engineering  |  2022",8.8);y-=12;
- heading("Skills");
- paragraph("Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation learning, reinforcement learning, Koopman dynamics, sim-to-real.",0,{size:8.35,lead:10.7});
- const stream=commands.join("\n")+"\n";
- const obj=[null,"<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>",null,`<< /Length ${stream.length} >>\nstream\n${stream}endstream`,"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>","<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>"];
- const annotations=[];for(const l of links){const id=obj.length;annotations.push(id+" 0 R");obj.push(`<< /Type /Annot /Subtype /Link /Rect [${l.rect.map(z=>z.toFixed(2)).join(" ")}] /Border [0 0 0] /A << /S /URI /URI (${esc(l.url)}) >> >>`);}
- obj[3]=`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W} ${H}] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [${annotations.join(" ")}] >>`;
- let pdf="%PDF-1.4\n";const offsets=[0];for(let i=1;i<obj.length;i++){offsets.push(pdf.length);pdf+=`${i} 0 obj\n${obj[i]}\nendobj\n`;}
- const xr=pdf.length;pdf+=`xref\n0 ${obj.length}\n0000000000 65535 f \n`;for(let i=1;i<obj.length;i++){pdf+=String(offsets[i]).padStart(10,"0")+" 00000 n \n";}
+function buildResumePdf(){
+ const W=612,H=792,L=42,R=570;
+ let y=751,minY=y;
+ const cmds=[],urls=[];
+ function esc(s){return String(s).replace(/\\/g,"\\\\").replace(/\(/g,"\\(").replace(/\)/g,"\\)");}
+ const letterWidths={
+  " ":.25,"i":.28,"l":.28,"I":.33,"j":.3,"f":.34,"r":.33,"t":.33,
+  "m":.78,"w":.72,"M":.88,"W":.94,"@":.92,"#":.50,".":.25,",":.25,
+  ":":.28,";":.28,"!":.33,"'":.18,"(": .33,")":.33,"[":.33,"]":.33,
+  "-":.34,"/":.28,"&":.78,"1":.50,"?":.50
+ };
+ function width(s,size,bold=false){
+  let n=0;for(const ch of String(s)){n+=(letterWidths[ch]!==undefined?letterWidths[ch]:/[A-Z]/.test(ch)?.67:/[0-9]/.test(ch)?.50:.46);}
+  return n*size*(bold?1.025:1);
+ }
+ function put(x,Y,str,size=9,bold=false,italic=false){
+  const font=italic?3:(bold?2:1);
+  cmds.push(`0 0 0 rg BT /F${font} ${size.toFixed(2)} Tf 1 0 0 1 ${x.toFixed(2)} ${Y.toFixed(2)} Tm (${esc(str)}) Tj ET`);
+  minY=Math.min(minY,Y);
+ }
+ function wrap(s,maxW,size,bold=false){
+  let out=[],line="";
+  for(const w of s.split(/\s+/)){const next=line?line+" "+w:w;if(line&&width(next,size,bold)>maxW){out.push(line);line=w;}else{line=next;}}
+  if(line)out.push(line);
+  return out;
+ }
+ function lines(s,{x=L,w=R-L,size=9.1,step=11.55,bold=false,italic=false,offset=0}={}){
+  const a=wrap(s,w-offset,size,bold);
+  for(const v of a){put(x+offset,y,v,size,bold,italic);y-=step;}
+  return a.length;
+ }
+ function rule(Y){cmds.push(`0.16 0.16 0.16 RG 0.55 w ${L} ${Y.toFixed(2)} m ${R} ${Y.toFixed(2)} l S`);}
+ function title(t){y-=6;put(L,y,t.toUpperCase(),10.2,true);y-=4;rule(y);y-=13.8;}
+ function head(label,date,extra){
+  put(L,y,label,10.0,true);
+  put(R-width(date,8.7),y,date,8.7);
+  y-=12.4;
+  if(extra){put(L+1,y,extra,8.65,false,true);y-=14.0;}else y-=1.5;
+ }
+ function bullet(s){put(L+7,y,"-",9.2);lines(s,{x:L,w:R-L-21,offset:21,size:9.0,step:11.25});y-=2.3;}
+ function project(name,text,link,url){
+  put(L+2,y,name,9.25,true);
+  if(link){const lx=L+10+width(name,9.25,true);put(lx,y,link,8.65,false);urls.push({rect:[lx,y-2,lx+width(link,8.65)+3,y+9],url});}
+  y-=12.0;lines(text,{x:L+2,w:R-L-5,size:8.9,step:11.2});y-=3.4;
+ }
+ function contact(label,url,x,Y){
+  put(x,Y,label,8.8);
+  urls.push({rect:[x,Y-2,x+width(label,8.8)+3,Y+9],url});
+  return width(label,8.8);
+ }
+ const name="LINHAO BAI";put((W-width(name,22.6,true))/2,y,name,22.6,true);y-=25.5;
+ const contactY=y;
+ const items=[
+  ["Superbp4@gmail.com","mailto:Superbp4@gmail.com"],
+  ["marvelousp4.github.io","https://marvelousp4.github.io/"],
+  ["GitHub","https://github.com/Marvelousp4"],
+  ["Scholar","https://scholar.google.com/citations?user=MAtZMRIAAAAJ"],
+  ["LinkedIn","https://www.linkedin.com/in/linhaobai/"]
+ ];
+ let total=0;for(let k=0;k<items.length;k++)total+=width(items[k][0],8.8)+(k<items.length-1?17:0);
+ let x=(W-total)/2;
+ for(let k=0;k<items.length;k++){
+   x+=contact(items[k][0],items[k][1],x,contactY);
+   if(k<items.length-1){x+=7;put(x,contactY,"|",8.2);x+=10;}
+ }
+ y-=17.5;
+ title("Professional Experience");
+ head("Tesla  -  Robotics Integrations Engineer","Sep 2026 - Present","Austin, TX  |  Mobile Robotics / Overmind");
+ bullet("Work on large-scale AMR, AGV, and ASRS systems covering multi-robot coordination, task sequencing, fleet orchestration, production workflows, and robot-to-equipment interfaces.");
+ bullet("Investigate behavior across distributed services, Kubernetes, NATS messaging, observability, robot runtimes, localization, and industrial PLC / OPC UA systems.");
+ bullet("Work with simulation and virtual commissioning to test task logic, operational scenarios, and system behavior before and during production deployment.");
+ bullet("Develop the design of AI-agent-assisted diagnostics that connect robot incidents, logs, system state, configurations, and source-level evidence.");
+ y-=3.2;
+ head("Georgia Tech STAR Lab  -  Graduate Research Assistant","Oct 2024 - May 2026","Atlanta, GA");
+ bullet("Conducted robot-learning research in dexterous manipulation, visuomotor behavior models, residual reinforcement learning, and sim-to-real transfer.");
+ bullet("Built ROS-based real-time learned-policy execution for a Kinova arm and dexterous hands, including synchronized commands, joint feedback, and experiment logging.");
+ y-=3.2;
+ head("SEER Robotics  -  Software Engineer / Project Manager","Jun 2022 - Jul 2024","Shanghai, China");
+ bullet("Developed C++ robot-controller tools for telemetry, time synchronization, monitoring, OTA / backup, and robot software interfaces.");
+ bullet("Worked on international AMR fleets and a five-AMR / 100+ rack warehouse system: routing, rack reservations, queueing, SLAM / QR correction, and randomized fleet tests.");
+ title("Selected Research & Publications");
+ project("Going with the Flow (K-UBM)  |  CoRL 2026  |  Equal contribution","Co-authored Koopman-based visuomotor behavior models and event-triggered replanning for dexterous manipulation.","[paper]","https://arxiv.org/abs/2602.07413");
+ project("Video2Sim2Real  |  2026 preprint","Co-authored a video-to-simulation-to-real pipeline for autonomous dexterous skill acquisition, involving perception, simulation, and policy learning.","[paper]","https://arxiv.org/abs/2606.08828");
+ project("A 1/R Law for Kurtosis Contrast in Balanced Mixtures  |  IEEE SPL 2026","A signal processing publication on kurtosis contrast in balanced mixtures.");
+ title("Selected Projects");
+ project("Multi-Robot Pathfinding & Scheduling Simulation","Reproduced published multi-agent planning methods in simulation; studied route conflicts, collision avoidance, and fleet coordination.");
+ project("SO-101 & MicroDuck  |  Robot Learning Reproductions","Reproduced open-source manipulation and locomotion learning experiments involving policy training, reinforcement learning, and simulation.");
+ title("Education");
+ put(L+2,y,"Georgia Institute of Technology  -  M.S. Computer Science",9.25,true);
+ put(R-width("2024 - 2026",8.5),y,"2024 - 2026",8.5);y-=12.0;
+ put(L+10,y,"GPA: 4.0 / 4.0",8.9);y-=14.1;
+ put(L+2,y,"Chongqing Jiaotong University  -  B.Eng. Water Resources Engineering",9.05,true);
+ put(R-width("2018 - 2022",8.5),y,"2018 - 2022",8.5);y-=12.1;
+ title("Technical Skills");
+ lines("Python, C++, PyTorch, ROS / ROS2, MuJoCo, Linux, Docker, Kubernetes, Git, NATS, OPC UA, SLAM, multi-agent planning, imitation learning, reinforcement learning, Koopman dynamics, sim-to-real, distributed systems.",{x:L+2,w:R-L-4,size:8.75,step:10.9});
+ const stream=cmds.join("\n")+"\n";
+ const obj=[null,"<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>",null,`<< /Length ${stream.length} >>\nstream\n${stream}endstream`,
+ "<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>",
+ "<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>",
+ "<< /Type /Font /Subtype /Type1 /BaseFont /Times-Italic >>"];
+ const annot=[];for(const l of urls){let id=obj.length;annot.push(id+" 0 R");obj.push(`<< /Type /Annot /Subtype /Link /Rect [${l.rect.map(z=>z.toFixed(2)).join(" ")}] /Border [0 0 0] /A << /S /URI /URI (${esc(l.url)}) >> >>`);}
+ obj[3]=`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${W} ${H}] /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> /Contents 4 0 R /Annots [${annot.join(" ")}] >>`;
+ let pdf="%PDF-1.4\n";const offsets=[0];
+ for(let i=1;i<obj.length;i++){offsets.push(pdf.length);pdf+=`${i} 0 obj\n${obj[i]}\nendobj\n`;}
+ const xr=pdf.length;pdf+=`xref\n0 ${obj.length}\n0000000000 65535 f \n`;
+ for(let i=1;i<obj.length;i++)pdf+=String(offsets[i]).padStart(10,"0")+" 00000 n \n";
  pdf+=`trailer\n<< /Size ${obj.length} /Root 1 0 R >>\nstartxref\n${xr}\n%%EOF\n`;
- if(/[^\x00-\x7f]/.test(pdf))throw Error("Non-ASCII byte in PDF source");
- return {pdf,minY,linkCount:links.length,bytes:pdf.length};
+ if(/[^\x00-\x7f]/.test(pdf))throw Error("Non-ascii PDF");
+ return {pdf,minY,linkCount:urls.length,bytes:pdf.length};
 }
 const {pdf,minY}=buildResumePdf();
-if (minY<45) throw new Error("Resume overflows the page");
+if(minY<38) throw new Error("Content extends beyond the bottom margin");
 fs.writeFileSync(new URL("../resume.pdf",import.meta.url),pdf,{encoding:"ascii"});
-console.log("Wrote resume.pdf (1 page)");
+console.log("Wrote resume.pdf (one page)");
